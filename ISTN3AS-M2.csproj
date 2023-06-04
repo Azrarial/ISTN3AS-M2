@@ -52,6 +52,11 @@
     <Compile Include="CoachMenuForm.Designer.cs">
       <DependentUpon>CoachMenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ds360Box.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds360Box.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +89,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ds360Box.xsc">
+      <DependentUpon>ds360Box.xsd</DependentUpon>
+    </None>
+    <None Include="ds360Box.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds360Box.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ds360Box.xss">
+      <DependentUpon>ds360Box.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
