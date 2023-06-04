@@ -21,5 +21,10 @@ namespace ISTN3AS_M2
         {
             this.Close();
         }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
