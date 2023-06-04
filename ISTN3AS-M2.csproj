@@ -46,10 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dsBox360.Designer.cs">
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ds360Box.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dsBox360.xsd</DependentUpon>
+      <DependentUpon>ds360Box.xsd</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -65,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,16 +86,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="dsBox360.xsc">
-      <DependentUpon>dsBox360.xsd</DependentUpon>
+    <None Include="ds360Box.xsc">
+      <DependentUpon>ds360Box.xsd</DependentUpon>
     </None>
-    <None Include="dsBox360.xsd">
+    <None Include="ds360Box.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsBox360.Designer.cs</LastGenOutput>
+      <LastGenOutput>ds360Box.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="dsBox360.xss">
-      <DependentUpon>dsBox360.xsd</DependentUpon>
+    <None Include="ds360Box.xss">
+      <DependentUpon>ds360Box.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

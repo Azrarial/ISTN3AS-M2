@@ -20,9 +20,9 @@ namespace ISTN3AS_M2 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("GroupWst13DataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ds360Box")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class dsBox360 : global::System.Data.DataSet {
+    public partial class ds360Box : global::System.Data.DataSet {
         
         private AssetDataTable tableAsset;
         
@@ -50,7 +50,7 @@ namespace ISTN3AS_M2 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public dsBox360() {
+        public ds360Box() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -61,7 +61,7 @@ namespace ISTN3AS_M2 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected dsBox360(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ds360Box(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -277,7 +277,7 @@ namespace ISTN3AS_M2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            dsBox360 cln = ((dsBox360)(base.Clone()));
+            ds360Box cln = ((ds360Box)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -439,9 +439,9 @@ namespace ISTN3AS_M2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "GroupWst13DataSet";
+            this.DataSetName = "ds360Box";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/GroupWst13DataSet.xsd";
+            this.Namespace = "http://tempuri.org/ds360Box.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableAsset = new AssetDataTable();
@@ -545,7 +545,7 @@ namespace ISTN3AS_M2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            dsBox360 ds = new dsBox360();
+            ds360Box ds = new ds360Box();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -900,7 +900,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1254,7 +1254,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1636,7 +1636,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2037,7 +2037,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2376,7 +2376,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2728,7 +2728,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3067,7 +3067,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3464,7 +3464,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3833,7 +3833,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4140,7 +4140,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4492,7 +4492,7 @@ namespace ISTN3AS_M2 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsBox360 ds = new dsBox360();
+                ds360Box ds = new ds360Box();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5971,7 +5971,7 @@ namespace ISTN3AS_M2 {
         }
     }
 }
-namespace ISTN3AS_M2.GroupWst13DataSetTableAdapters {
+namespace ISTN3AS_M2.ds360BoxTableAdapters {
     
     
     /// <summary>
@@ -6166,7 +6166,7 @@ SELECT AssetID, AssetName, Condition, CostPrice, Type, Quantity FROM Asset WHERE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.AssetDataTable dataTable) {
+        public virtual int Fill(ds360Box.AssetDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6179,9 +6179,9 @@ SELECT AssetID, AssetName, Condition, CostPrice, Type, Quantity FROM Asset WHERE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.AssetDataTable GetData() {
+        public virtual ds360Box.AssetDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.AssetDataTable dataTable = new dsBox360.AssetDataTable();
+            ds360Box.AssetDataTable dataTable = new ds360Box.AssetDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6189,14 +6189,14 @@ SELECT AssetID, AssetName, Condition, CostPrice, Type, Quantity FROM Asset WHERE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.AssetDataTable dataTable) {
+        public virtual int Update(ds360Box.AssetDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Asset");
         }
         
@@ -6574,19 +6574,39 @@ SELECT BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue FROM Booki
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue FROM dbo.Bo" +
                 "oking";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue\r\nFRO" +
+                "M            Booking\r\nWHERE        (BookingDate = @bookingdate)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@bookingdate", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "BookingDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"INSERT INTO Booking
+                         (BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue)
+VALUES        (@BookingID,@ClientID,@ClassID,@BookingDate,@Status,@Type,@Venue); 
+SELECT BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue FROM Booking WHERE (BookingID = @BookingID)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BookingID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "BookingID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientID", global::System.Data.SqlDbType.VarChar, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ClientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BookingDate", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "BookingDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "Status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Type", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "Type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Venue", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "Venue", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.BookingDataTable dataTable) {
+        public virtual int Fill(ds360Box.BookingDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6599,9 +6619,9 @@ SELECT BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue FROM Booki
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.BookingDataTable GetData() {
+        public virtual ds360Box.BookingDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.BookingDataTable dataTable = new dsBox360.BookingDataTable();
+            ds360Box.BookingDataTable dataTable = new ds360Box.BookingDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6609,14 +6629,50 @@ SELECT BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue FROM Booki
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.BookingDataTable dataTable) {
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByDate(ds360Box.BookingDataTable dataTable, string bookingdate) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((bookingdate == null)) {
+                throw new global::System.ArgumentNullException("bookingdate");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(bookingdate));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ds360Box.BookingDataTable GetDataBy(string bookingdate) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((bookingdate == null)) {
+                throw new global::System.ArgumentNullException("bookingdate");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(bookingdate));
+            }
+            ds360Box.BookingDataTable dataTable = new ds360Box.BookingDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(ds360Box.BookingDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Booking");
         }
         
@@ -6853,6 +6909,71 @@ SELECT BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue FROM Booki
         public virtual int Update(string ClientID, string ClassID, System.DateTime BookingDate, string Status, string Type, string Venue, string Original_BookingID, string Original_ClientID, string Original_ClassID, System.DateTime Original_BookingDate, string Original_Status, string Original_Type, string Original_Venue) {
             return this.Update(Original_BookingID, ClientID, ClassID, BookingDate, Status, Type, Venue, Original_BookingID, Original_ClientID, Original_ClassID, Original_BookingDate, Original_Status, Original_Type, Original_Venue);
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertBooking(string BookingID, string ClientID, string ClassID, string BookingDate, string Status, string Type, string Venue) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            if ((BookingID == null)) {
+                throw new global::System.ArgumentNullException("BookingID");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(BookingID));
+            }
+            if ((ClientID == null)) {
+                throw new global::System.ArgumentNullException("ClientID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(ClientID));
+            }
+            if ((ClassID == null)) {
+                throw new global::System.ArgumentNullException("ClassID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(ClassID));
+            }
+            if ((BookingDate == null)) {
+                throw new global::System.ArgumentNullException("BookingDate");
+            }
+            else {
+                command.Parameters[3].Value = ((string)(BookingDate));
+            }
+            if ((Status == null)) {
+                throw new global::System.ArgumentNullException("Status");
+            }
+            else {
+                command.Parameters[4].Value = ((string)(Status));
+            }
+            if ((Type == null)) {
+                throw new global::System.ArgumentNullException("Type");
+            }
+            else {
+                command.Parameters[5].Value = ((string)(Type));
+            }
+            if ((Venue == null)) {
+                throw new global::System.ArgumentNullException("Venue");
+            }
+            else {
+                command.Parameters[6].Value = ((string)(Venue));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
     }
     
     /// <summary>
@@ -7048,19 +7169,66 @@ SELECT ClassID, CoachID, GroupType, ClassType, StartTime, EndTime, MaxCapacity, 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[6];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ClassID, CoachID, GroupType, ClassType, StartTime, EndTime, MaxCapacity, C" +
                 "urrentCapacity, ClassPublic FROM dbo.Class";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        ClassID, CoachID, GroupType, ClassType, StartTime, EndTime, MaxCapa" +
+                "city, CurrentCapacity, ClassPublic\r\nFROM            Class\r\nWHERE        (ClassTy" +
+                "pe LIKE @classtype + \'%\')";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@classtype", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "ClassType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "UPDATE       Class\r\nSET                ClassType = @ClassType\r\nWHERE        (Clas" +
+                "sID = @Original_ClassID); \r\nSELECT ClassID, CoachID, GroupType, ClassType, Start" +
+                "Time, EndTime, MaxCapacity, CurrentCapacity, ClassPublic FROM Class WHERE (Class" +
+                "ID = @ClassID)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClassType", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "ClassType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "UPDATE       Class\r\nSET                EndTime = @EndTime\r\nWHERE        (ClassID " +
+                "= @Original_ClassID); \r\nSELECT ClassID, CoachID, GroupType, ClassType, StartTime" +
+                ", EndTime, MaxCapacity, CurrentCapacity, ClassPublic FROM Class WHERE (ClassID =" +
+                " @ClassID)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EndTime", global::System.Data.SqlDbType.Time, 5, global::System.Data.ParameterDirection.Input, 0, 0, "EndTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "UPDATE       Class\r\nSET                GroupType = @GroupType\r\nWHERE        (Clas" +
+                "sID = @Original_ClassID); \r\nSELECT ClassID, CoachID, GroupType, ClassType, Start" +
+                "Time, EndTime, MaxCapacity, CurrentCapacity, ClassPublic FROM Class WHERE (Class" +
+                "ID = @ClassID)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GroupType", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "GroupType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = "UPDATE       Class\r\nSET                StartTime = @StartTime\r\nWHERE        (Clas" +
+                "sID = @Original_ClassID); \r\nSELECT ClassID, CoachID, GroupType, ClassType, Start" +
+                "Time, EndTime, MaxCapacity, CurrentCapacity, ClassPublic FROM Class WHERE (Class" +
+                "ID = @ClassID)";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartTime", global::System.Data.SqlDbType.Time, 5, global::System.Data.ParameterDirection.Input, 0, 0, "StartTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClassID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ClassID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.ClassDataTable dataTable) {
+        public virtual int Fill(ds360Box.ClassDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7073,9 +7241,9 @@ SELECT ClassID, CoachID, GroupType, ClassType, StartTime, EndTime, MaxCapacity, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.ClassDataTable GetData() {
+        public virtual ds360Box.ClassDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.ClassDataTable dataTable = new dsBox360.ClassDataTable();
+            ds360Box.ClassDataTable dataTable = new ds360Box.ClassDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7083,14 +7251,50 @@ SELECT ClassID, CoachID, GroupType, ClassType, StartTime, EndTime, MaxCapacity, 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.ClassDataTable dataTable) {
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByClassType(ds360Box.ClassDataTable dataTable, string classtype) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((classtype == null)) {
+                throw new global::System.ArgumentNullException("classtype");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(classtype));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ds360Box.ClassDataTable GetDataBy(string classtype) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((classtype == null)) {
+                throw new global::System.ArgumentNullException("classtype");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(classtype));
+            }
+            ds360Box.ClassDataTable dataTable = new ds360Box.ClassDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(ds360Box.ClassDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Class");
         }
         
@@ -7330,6 +7534,170 @@ SELECT ClassID, CoachID, GroupType, ClassType, StartTime, EndTime, MaxCapacity, 
                     bool Original_ClassPublic) {
             return this.Update(Original_ClassID, CoachID, GroupType, ClassType, StartTime, EndTime, MaxCapacity, CurrentCapacity, ClassPublic, Original_ClassID, Original_CoachID, Original_GroupType, Original_ClassType, Original_StartTime, Original_EndTime, Original_MaxCapacity, Original_CurrentCapacity, Original_ClassPublic);
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateClassType(string ClassType, string Original_ClassID, string ClassID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            if ((ClassType == null)) {
+                throw new global::System.ArgumentNullException("ClassType");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(ClassType));
+            }
+            if ((Original_ClassID == null)) {
+                throw new global::System.ArgumentNullException("Original_ClassID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_ClassID));
+            }
+            if ((ClassID == null)) {
+                throw new global::System.ArgumentNullException("ClassID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(ClassID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateEndTime(string EndTime, string Original_ClassID, string ClassID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((EndTime == null)) {
+                throw new global::System.ArgumentNullException("EndTime");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(EndTime));
+            }
+            if ((Original_ClassID == null)) {
+                throw new global::System.ArgumentNullException("Original_ClassID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_ClassID));
+            }
+            if ((ClassID == null)) {
+                throw new global::System.ArgumentNullException("ClassID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(ClassID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateGroupType(string GroupType, string Original_ClassID, string ClassID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
+            if ((GroupType == null)) {
+                throw new global::System.ArgumentNullException("GroupType");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(GroupType));
+            }
+            if ((Original_ClassID == null)) {
+                throw new global::System.ArgumentNullException("Original_ClassID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_ClassID));
+            }
+            if ((ClassID == null)) {
+                throw new global::System.ArgumentNullException("ClassID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(ClassID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateStartTime(string StartTime, string Original_ClassID, string ClassID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[5];
+            if ((StartTime == null)) {
+                throw new global::System.ArgumentNullException("StartTime");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(StartTime));
+            }
+            if ((Original_ClassID == null)) {
+                throw new global::System.ArgumentNullException("Original_ClassID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_ClassID));
+            }
+            if ((ClassID == null)) {
+                throw new global::System.ArgumentNullException("ClassID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(ClassID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
     }
     
     /// <summary>
@@ -7530,19 +7898,33 @@ SELECT ClientID, FirstName, LastName, ContactNumber, EmailAddress, MembershipPla
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ClientID, FirstName, LastName, ContactNumber, EmailAddress, MembershipPlan" +
                 ", AmountDue, Age, Gender, Password FROM dbo.Client";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        ClientID, FirstName, LastName, ContactNumber, EmailAddress, Members" +
+                "hipPlan, AmountDue, Age, Gender, Password\r\nFROM            Client\r\nWHERE        " +
+                "(ClientID = @clientid)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@clientid", global::System.Data.SqlDbType.VarChar, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ClientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT        ClientID, FirstName, LastName, ContactNumber, EmailAddress, Members" +
+                "hipPlan, AmountDue, Age, Gender, Password\r\nFROM            Client\r\nWHERE        " +
+                "(LastName LIKE @lastname + \'%\')";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lastname", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.ClientDataTable dataTable) {
+        public virtual int Fill(ds360Box.ClientDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7555,9 +7937,9 @@ SELECT ClientID, FirstName, LastName, ContactNumber, EmailAddress, MembershipPla
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.ClientDataTable GetData() {
+        public virtual ds360Box.ClientDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.ClientDataTable dataTable = new dsBox360.ClientDataTable();
+            ds360Box.ClientDataTable dataTable = new ds360Box.ClientDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7565,14 +7947,86 @@ SELECT ClientID, FirstName, LastName, ContactNumber, EmailAddress, MembershipPla
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.ClientDataTable dataTable) {
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByCustID(ds360Box.ClientDataTable dataTable, string clientid) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((clientid == null)) {
+                throw new global::System.ArgumentNullException("clientid");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(clientid));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ds360Box.ClientDataTable GetDataBy1(string clientid) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((clientid == null)) {
+                throw new global::System.ArgumentNullException("clientid");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(clientid));
+            }
+            ds360Box.ClientDataTable dataTable = new ds360Box.ClientDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByLastName(ds360Box.ClientDataTable dataTable, string lastname) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((lastname == null)) {
+                throw new global::System.ArgumentNullException("lastname");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(lastname));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ds360Box.ClientDataTable GetDataBy(string lastname) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((lastname == null)) {
+                throw new global::System.ArgumentNullException("lastname");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(lastname));
+            }
+            ds360Box.ClientDataTable dataTable = new ds360Box.ClientDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(ds360Box.ClientDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Client");
         }
         
@@ -8092,7 +8546,7 @@ SELECT CoachID, FirstName, LastName, ContactNumber, EmailAddress, Password FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.CoachDataTable dataTable) {
+        public virtual int Fill(ds360Box.CoachDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8105,9 +8559,9 @@ SELECT CoachID, FirstName, LastName, ContactNumber, EmailAddress, Password FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.CoachDataTable GetData() {
+        public virtual ds360Box.CoachDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.CoachDataTable dataTable = new dsBox360.CoachDataTable();
+            ds360Box.CoachDataTable dataTable = new ds360Box.CoachDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8115,14 +8569,14 @@ SELECT CoachID, FirstName, LastName, ContactNumber, EmailAddress, Password FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.CoachDataTable dataTable) {
+        public virtual int Update(ds360Box.CoachDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Coach");
         }
         
@@ -8550,7 +9004,7 @@ SELECT ItemID, ItemName, ItemDescription, SellingPrice, Type, CostPrice, Quantit
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.InventoryDataTable dataTable) {
+        public virtual int Fill(ds360Box.InventoryDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8563,9 +9017,9 @@ SELECT ItemID, ItemName, ItemDescription, SellingPrice, Type, CostPrice, Quantit
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.InventoryDataTable GetData() {
+        public virtual ds360Box.InventoryDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.InventoryDataTable dataTable = new dsBox360.InventoryDataTable();
+            ds360Box.InventoryDataTable dataTable = new ds360Box.InventoryDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8573,14 +9027,14 @@ SELECT ItemID, ItemName, ItemDescription, SellingPrice, Type, CostPrice, Quantit
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.InventoryDataTable dataTable) {
+        public virtual int Update(ds360Box.InventoryDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Inventory");
         }
         
@@ -8957,7 +9411,7 @@ SELECT ManagerID, FirstName, LastName, ContactNumber, EmailAddress, Password FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.ManagerDataTable dataTable) {
+        public virtual int Fill(ds360Box.ManagerDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8970,9 +9424,9 @@ SELECT ManagerID, FirstName, LastName, ContactNumber, EmailAddress, Password FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.ManagerDataTable GetData() {
+        public virtual ds360Box.ManagerDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.ManagerDataTable dataTable = new dsBox360.ManagerDataTable();
+            ds360Box.ManagerDataTable dataTable = new ds360Box.ManagerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8980,14 +9434,14 @@ SELECT ManagerID, FirstName, LastName, ContactNumber, EmailAddress, Password FRO
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.ManagerDataTable dataTable) {
+        public virtual int Update(ds360Box.ManagerDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Manager");
         }
         
@@ -9432,7 +9886,7 @@ SELECT SaleID, SaleTotal_exclVAT, SaleDate, SaleTime, SaleTotal_inclVAT, SalePay
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.SaleDataTable dataTable) {
+        public virtual int Fill(ds360Box.SaleDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9445,9 +9899,9 @@ SELECT SaleID, SaleTotal_exclVAT, SaleDate, SaleTime, SaleTotal_inclVAT, SalePay
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.SaleDataTable GetData() {
+        public virtual ds360Box.SaleDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.SaleDataTable dataTable = new dsBox360.SaleDataTable();
+            ds360Box.SaleDataTable dataTable = new ds360Box.SaleDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9455,14 +9909,14 @@ SELECT SaleID, SaleTotal_exclVAT, SaleDate, SaleTime, SaleTotal_inclVAT, SalePay
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.SaleDataTable dataTable) {
+        public virtual int Update(ds360Box.SaleDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Sale");
         }
         
@@ -9912,7 +10366,7 @@ SELECT SaleItemID, SaleID, ItemID, PaymentDetails, Quantity, UnitPrice, Size, Co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.SaleItemDataTable dataTable) {
+        public virtual int Fill(ds360Box.SaleItemDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9925,9 +10379,9 @@ SELECT SaleItemID, SaleID, ItemID, PaymentDetails, Quantity, UnitPrice, Size, Co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.SaleItemDataTable GetData() {
+        public virtual ds360Box.SaleItemDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.SaleItemDataTable dataTable = new dsBox360.SaleItemDataTable();
+            ds360Box.SaleItemDataTable dataTable = new ds360Box.SaleItemDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9935,14 +10389,14 @@ SELECT SaleItemID, SaleID, ItemID, PaymentDetails, Quantity, UnitPrice, Size, Co
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.SaleItemDataTable dataTable) {
+        public virtual int Update(ds360Box.SaleItemDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "SaleItem");
         }
         
@@ -10371,18 +10825,51 @@ SELECT SupplierID, SupplierName, ContactNumber, EmailAddress FROM Supplier WHERE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT SupplierID, SupplierName, ContactNumber, EmailAddress FROM dbo.Supplier";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        SupplierID, SupplierName, ContactNumber, EmailAddress\r\nFROM        " +
+                "    Supplier\r\nWHERE        (SupplierName LIKE @suppliername + \'%\')";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@suppliername", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "UPDATE       Supplier\r\nSET                ContactNumber = @ContactNumber\r\nWHERE  " +
+                "      (SupplierID = @Original_SupplierID); \r\nSELECT SupplierID, SupplierName, Co" +
+                "ntactNumber, EmailAddress FROM Supplier WHERE (SupplierID = @SupplierID)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ContactNumber", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "ContactNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SupplierID", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierID", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "UPDATE       Supplier\r\nSET                EmailAddress = @EmailAddress\r\nWHERE    " +
+                "    (SupplierID = @Original_SupplierID); \r\nSELECT SupplierID, SupplierName, Cont" +
+                "actNumber, EmailAddress FROM Supplier WHERE (SupplierID = @SupplierID)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmailAddress", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "EmailAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SupplierID", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierID", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "UPDATE       Supplier\r\nSET                SupplierName = @SupplierName\r\nWHERE    " +
+                "    (SupplierID = @Original_SupplierID); \r\nSELECT SupplierID, SupplierName, Cont" +
+                "actNumber, EmailAddress FROM Supplier WHERE (SupplierID = @SupplierID)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierName", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SupplierID", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierID", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.SupplierDataTable dataTable) {
+        public virtual int Fill(ds360Box.SupplierDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10395,9 +10882,9 @@ SELECT SupplierID, SupplierName, ContactNumber, EmailAddress FROM Supplier WHERE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.SupplierDataTable GetData() {
+        public virtual ds360Box.SupplierDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.SupplierDataTable dataTable = new dsBox360.SupplierDataTable();
+            ds360Box.SupplierDataTable dataTable = new ds360Box.SupplierDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10405,14 +10892,50 @@ SELECT SupplierID, SupplierName, ContactNumber, EmailAddress FROM Supplier WHERE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.SupplierDataTable dataTable) {
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBySupplierName(ds360Box.SupplierDataTable dataTable, string suppliername) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((suppliername == null)) {
+                throw new global::System.ArgumentNullException("suppliername");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(suppliername));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ds360Box.SupplierDataTable GetDataBy(string suppliername) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((suppliername == null)) {
+                throw new global::System.ArgumentNullException("suppliername");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(suppliername));
+            }
+            ds360Box.SupplierDataTable dataTable = new ds360Box.SupplierDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(ds360Box.SupplierDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "Supplier");
         }
         
@@ -10596,6 +11119,129 @@ SELECT SupplierID, SupplierName, ContactNumber, EmailAddress FROM Supplier WHERE
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string SupplierName, string ContactNumber, string EmailAddress, string Original_SupplierID, string Original_SupplierName, string Original_ContactNumber, string Original_EmailAddress) {
             return this.Update(Original_SupplierID, SupplierName, ContactNumber, EmailAddress, Original_SupplierID, Original_SupplierName, Original_ContactNumber, Original_EmailAddress);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateContactNumber(string ContactNumber, string Original_SupplierID, string SupplierID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            if ((ContactNumber == null)) {
+                throw new global::System.ArgumentNullException("ContactNumber");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(ContactNumber));
+            }
+            if ((Original_SupplierID == null)) {
+                throw new global::System.ArgumentNullException("Original_SupplierID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_SupplierID));
+            }
+            if ((SupplierID == null)) {
+                throw new global::System.ArgumentNullException("SupplierID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(SupplierID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateEmail(string EmailAddress, string Original_SupplierID, string SupplierID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((EmailAddress == null)) {
+                throw new global::System.ArgumentNullException("EmailAddress");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(EmailAddress));
+            }
+            if ((Original_SupplierID == null)) {
+                throw new global::System.ArgumentNullException("Original_SupplierID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_SupplierID));
+            }
+            if ((SupplierID == null)) {
+                throw new global::System.ArgumentNullException("SupplierID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(SupplierID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateSupplierName(string SupplierName, string Original_SupplierID, string SupplierID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
+            if ((SupplierName == null)) {
+                throw new global::System.ArgumentNullException("SupplierName");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(SupplierName));
+            }
+            if ((Original_SupplierID == null)) {
+                throw new global::System.ArgumentNullException("Original_SupplierID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_SupplierID));
+            }
+            if ((SupplierID == null)) {
+                throw new global::System.ArgumentNullException("SupplierID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(SupplierID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -10794,7 +11440,7 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsBox360.SupplierOrderDataTable dataTable) {
+        public virtual int Fill(ds360Box.SupplierOrderDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10807,9 +11453,9 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsBox360.SupplierOrderDataTable GetData() {
+        public virtual ds360Box.SupplierOrderDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsBox360.SupplierOrderDataTable dataTable = new dsBox360.SupplierOrderDataTable();
+            ds360Box.SupplierOrderDataTable dataTable = new ds360Box.SupplierOrderDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10817,14 +11463,14 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360.SupplierOrderDataTable dataTable) {
+        public virtual int Update(ds360Box.SupplierOrderDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dsBox360 dataSet) {
+        public virtual int Update(ds360Box dataSet) {
             return this.Adapter.Update(dataSet, "SupplierOrder");
         }
         
@@ -11344,7 +11990,7 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(dsBox360 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ds360Box dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._assetTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Asset.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -11453,7 +12099,7 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(dsBox360 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ds360Box dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._assetTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Asset.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -11551,7 +12197,7 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(dsBox360 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ds360Box dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._supplierOrderTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.SupplierOrder.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -11673,7 +12319,7 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(dsBox360 dataSet) {
+        public virtual int UpdateAll(ds360Box dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
