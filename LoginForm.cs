@@ -60,7 +60,7 @@ namespace ISTN3AS_M2
 
             if ((result > 0) && (rbtnManager.Checked))
             {
-                ManagerMenuForm managermenuform = new ManagerMenuForm();
+                MenuM managermenuform = new MenuM();
                 this.Hide();
                 MessageBox.Show("Manager Login");
                 managermenuform.ShowDialog();
@@ -68,7 +68,7 @@ namespace ISTN3AS_M2
             }
             else if ((result > 0) && (rbtnCoach.Checked))
             {
-                CoachMenuForm coachmenuform = new CoachMenuForm();
+                MenuC coachmenuform = new MenuC();
                 this.Hide();
                 MessageBox.Show("Coach Login");
                 coachmenuform.ShowDialog();
