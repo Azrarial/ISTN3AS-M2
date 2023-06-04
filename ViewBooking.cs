@@ -16,5 +16,17 @@ namespace ISTN3AS_M2
         {
             InitializeComponent();
         }
+
+        private void ViewBooking_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'ds360Box.Booking' table. You can move, or remove it, as needed.
+            this.bookingTableAdapter.Fill(this.ds360Box.Booking);
+
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            bookingTableAdapter.FillByDate(ds360Box.Booking, monthCalendar1.SelectionRange.Start.ToString());
+        }
     }
 }
