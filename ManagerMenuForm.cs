@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ISTN3AS_M2
 {
-    public partial class Manager_Menu : Form
+    public partial class ManagerMenuForm : Form
     {
-        public Manager_Menu()
+        public ManagerMenuForm()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

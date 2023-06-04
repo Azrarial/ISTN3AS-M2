@@ -60,10 +60,11 @@ namespace ISTN3AS_M2
 
             if ((result > 0) && (rbtnManager.Checked))
             {
-                // frmMenu form = new frmMenu();
-                //  form.ShowDialog();
-                //    this.Hide();
+                ManagerMenuForm managermenuform = new ManagerMenuForm();
+                this.Hide();
                 MessageBox.Show("Manager Login");
+                managermenuform.ShowDialog();
+                this.Show();
             }
             else if ((result > 0) && (rbtnCoach.Checked))
             {
@@ -137,6 +138,16 @@ namespace ISTN3AS_M2
                 txtUserName.Text = "CoachID";
                 txtUserName.ForeColor = Color.LightGray;
             }
+        }
+
+        private void LoginForm_VisibleChanged(object sender, EventArgs e)
+        {
+            rbtnManager.Checked = true;
+            rbtnCoach.Checked = false;
+            txtUserName.Text = "ManagerID";
+            txtUserName.ForeColor = Color.LightGray;
+            txtPassword.Text = "Password";
+            txtPassword.ForeColor = Color.LightGray;
         }
     }
 }
