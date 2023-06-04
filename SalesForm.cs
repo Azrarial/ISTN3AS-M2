@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ISTN3AS_M2
 {
-    public partial class ManagerMenuForm : Form
+    public partial class SalesForm : Form
     {
-        public ManagerMenuForm()
+        public SalesForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnBooking_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
