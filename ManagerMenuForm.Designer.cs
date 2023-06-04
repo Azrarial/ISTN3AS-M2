@@ -61,6 +61,7 @@
             this.btnBooking.TabIndex = 1;
             this.btnBooking.Text = "Booking System";
             this.btnBooking.UseVisualStyleBackColor = false;
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // btnSales
             // 
