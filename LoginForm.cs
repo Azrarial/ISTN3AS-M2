@@ -81,6 +81,7 @@ namespace ISTN3AS_M2
             {
                 txtUserName.Text = "";
                 txtUserName.Focus();
+                txtUserName.ForeColor = Color.Black;
             }  
         }
 
@@ -89,10 +90,14 @@ namespace ISTN3AS_M2
             if ((txtUserName.Text == "") && (rbtnManager.Checked))
             {
                 txtUserName.Text = "ManagerID";
+                txtUserName.ForeColor = Color.LightGray;
+                btnLogin.Focus();
             }
             else if ((txtUserName.Text == "") && (rbtnCoach.Checked))
             {
                 txtUserName.Text = "CoachID";
+                txtUserName.ForeColor = Color.LightGray;
+                btnLogin.Focus();
             }
         }
 
@@ -102,6 +107,7 @@ namespace ISTN3AS_M2
             {
                 txtPassword.Text = "";
                 txtPassword.Focus();
+                txtPassword.ForeColor = Color.Black;
             }
         }
 
@@ -110,6 +116,8 @@ namespace ISTN3AS_M2
             if (txtPassword.Text == "")
             {
                 txtPassword.Text = "Password";
+                txtPassword.ForeColor = Color.LightGray;
+                btnLogin.Focus();
             }
         }
 
@@ -118,6 +126,7 @@ namespace ISTN3AS_M2
             if (rbtnManager.Checked)
             {
                 txtUserName.Text = "ManagerID";
+                txtUserName.ForeColor = Color.LightGray;
             }
         }
 
@@ -126,6 +135,7 @@ namespace ISTN3AS_M2
             if (rbtnCoach.Checked)
             {
                 txtUserName.Text = "CoachID";
+                txtUserName.ForeColor = Color.LightGray;
             }
         }
     }
