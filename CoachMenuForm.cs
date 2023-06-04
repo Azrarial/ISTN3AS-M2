@@ -16,5 +16,10 @@ namespace ISTN3AS_M2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
