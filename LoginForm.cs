@@ -68,7 +68,11 @@ namespace ISTN3AS_M2
             }
             else if ((result > 0) && (rbtnCoach.Checked))
             {
+                CoachMenuForm coachmenuform = new CoachMenuForm();
+                this.Hide();
                 MessageBox.Show("Coach Login");
+                coachmenuform.ShowDialog();
+                this.Show();
             }
             else
             {
