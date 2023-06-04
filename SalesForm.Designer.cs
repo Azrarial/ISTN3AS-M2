@@ -405,6 +405,7 @@
             // 
             this.txtManagerID.Location = new System.Drawing.Point(125, 213);
             this.txtManagerID.Name = "txtManagerID";
+            this.txtManagerID.ReadOnly = true;
             this.txtManagerID.Size = new System.Drawing.Size(142, 20);
             this.txtManagerID.TabIndex = 10;
             // 
