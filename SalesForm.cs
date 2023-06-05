@@ -91,7 +91,7 @@ namespace ISTN3AS_M2
             double amtTethered = Convert.ToDouble(txtAmtTethered.Text);
             double change = Convert.ToDouble(txtChange.Text);
 
-            if (totalCost == (amtTethered + change))
+            if (amtTethered == (totalCost + change))
             {
                 if (txtClientID.Text != "")
                 {
@@ -99,15 +99,43 @@ namespace ISTN3AS_M2
                     response = MessageBox.Show("Confirm if Payment Details are Correct", "Confirm Order", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
                     if (response == System.Windows.Forms.DialogResult.OK)
-                    {   
+                    {
+                    
+                        Random random = new Random();
+
+                        string saleID = "SI" + (random.Next(10000000, 99999999)).ToString();
+
+                        decimal inclTax = Convert.ToDecimal(txtTotal.Text);
+                        double iInclTax = Convert.ToDouble(txtTotal.Text);
+                        double iExclTex = iInclTax * 0.85;
+                        decimal exclTax = Convert.ToDecimal(iExclTex);
+
+                        DateTime now = DateTime.Now;
+
+                        // Store the date and time in separate string variables
+                        string currentDate = now.ToString("yyyy-MM-dd"); // Format: "yyyy-MM-dd"
+                        string currentTime = now.ToString("HH:mm:ss");
 
 
+                        string payment = "";
+                        if (rbtnCard.Checked)
+                        {
+                            payment = rbtnCard.Text;
+                        }
+                        else 
+                            payment = rbtnCash.Text;
+                        decimal amtTendered = Convert.ToDecimal(txtAmtTethered.Text);
+                        decimal amtchange = Convert.ToDecimal(txtChange.Text);
+                        string clientID = txtClientID.Text;
+                        string manager = txtManagerID.Text;
+
+
+
+                        saleTableAdapter.InsertSale(saleID, exclTax, currentDate, currentTime, inclTax, payment, amtTendered, amtchange, clientID, manager);
 
                         MessageBox.Show("Insert statement");
 
-
-
-
+                        this.saleTableAdapter.Fill(this.ds360Box.Sale);
                     }
                 }
                 else if (txtClientID.Text == "")
@@ -115,7 +143,7 @@ namespace ISTN3AS_M2
                     MessageBox.Show("Enter the Client's ID", "ID Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else if (totalCost != (amtTethered + change))
+            else if (amtTethered != (totalCost + change))
             {
                 MessageBox.Show("Money does not tally up", "Money Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

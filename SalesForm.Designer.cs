@@ -40,6 +40,16 @@
             this.inventoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ds360Box = new ISTN3AS_M2.ds360Box();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.saleIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saleTotalexclVATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saleDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saleTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saleTotalinclVATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salePaymentTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saleAmountTenderedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saleChangeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.managerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.saleTransactionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ds360BoxBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -76,16 +86,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.supplierOrderTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SupplierOrderTableAdapter();
-            this.managerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleChangeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleAmountTenderedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salePaymentTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleTotalinclVATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleTotalexclVATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
@@ -192,6 +192,66 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(1045, 150);
             this.dataGridView3.TabIndex = 2;
+            // 
+            // saleIDDataGridViewTextBoxColumn1
+            // 
+            this.saleIDDataGridViewTextBoxColumn1.DataPropertyName = "SaleID";
+            this.saleIDDataGridViewTextBoxColumn1.HeaderText = "SaleID";
+            this.saleIDDataGridViewTextBoxColumn1.Name = "saleIDDataGridViewTextBoxColumn1";
+            // 
+            // saleTotalexclVATDataGridViewTextBoxColumn
+            // 
+            this.saleTotalexclVATDataGridViewTextBoxColumn.DataPropertyName = "SaleTotal_exclVAT";
+            this.saleTotalexclVATDataGridViewTextBoxColumn.HeaderText = "SaleTotal_exclVAT";
+            this.saleTotalexclVATDataGridViewTextBoxColumn.Name = "saleTotalexclVATDataGridViewTextBoxColumn";
+            // 
+            // saleDateDataGridViewTextBoxColumn
+            // 
+            this.saleDateDataGridViewTextBoxColumn.DataPropertyName = "SaleDate";
+            this.saleDateDataGridViewTextBoxColumn.HeaderText = "SaleDate";
+            this.saleDateDataGridViewTextBoxColumn.Name = "saleDateDataGridViewTextBoxColumn";
+            // 
+            // saleTimeDataGridViewTextBoxColumn
+            // 
+            this.saleTimeDataGridViewTextBoxColumn.DataPropertyName = "SaleTime";
+            this.saleTimeDataGridViewTextBoxColumn.HeaderText = "SaleTime";
+            this.saleTimeDataGridViewTextBoxColumn.Name = "saleTimeDataGridViewTextBoxColumn";
+            // 
+            // saleTotalinclVATDataGridViewTextBoxColumn
+            // 
+            this.saleTotalinclVATDataGridViewTextBoxColumn.DataPropertyName = "SaleTotal_inclVAT";
+            this.saleTotalinclVATDataGridViewTextBoxColumn.HeaderText = "SaleTotal_inclVAT";
+            this.saleTotalinclVATDataGridViewTextBoxColumn.Name = "saleTotalinclVATDataGridViewTextBoxColumn";
+            // 
+            // salePaymentTypeDataGridViewTextBoxColumn
+            // 
+            this.salePaymentTypeDataGridViewTextBoxColumn.DataPropertyName = "SalePaymentType";
+            this.salePaymentTypeDataGridViewTextBoxColumn.HeaderText = "SalePaymentType";
+            this.salePaymentTypeDataGridViewTextBoxColumn.Name = "salePaymentTypeDataGridViewTextBoxColumn";
+            // 
+            // saleAmountTenderedDataGridViewTextBoxColumn
+            // 
+            this.saleAmountTenderedDataGridViewTextBoxColumn.DataPropertyName = "SaleAmountTendered";
+            this.saleAmountTenderedDataGridViewTextBoxColumn.HeaderText = "SaleAmountTendered";
+            this.saleAmountTenderedDataGridViewTextBoxColumn.Name = "saleAmountTenderedDataGridViewTextBoxColumn";
+            // 
+            // saleChangeDataGridViewTextBoxColumn
+            // 
+            this.saleChangeDataGridViewTextBoxColumn.DataPropertyName = "SaleChange";
+            this.saleChangeDataGridViewTextBoxColumn.HeaderText = "SaleChange";
+            this.saleChangeDataGridViewTextBoxColumn.Name = "saleChangeDataGridViewTextBoxColumn";
+            // 
+            // clientIDDataGridViewTextBoxColumn
+            // 
+            this.clientIDDataGridViewTextBoxColumn.DataPropertyName = "ClientID";
+            this.clientIDDataGridViewTextBoxColumn.HeaderText = "ClientID";
+            this.clientIDDataGridViewTextBoxColumn.Name = "clientIDDataGridViewTextBoxColumn";
+            // 
+            // managerIDDataGridViewTextBoxColumn
+            // 
+            this.managerIDDataGridViewTextBoxColumn.DataPropertyName = "ManagerID";
+            this.managerIDDataGridViewTextBoxColumn.HeaderText = "ManagerID";
+            this.managerIDDataGridViewTextBoxColumn.Name = "managerIDDataGridViewTextBoxColumn";
             // 
             // saleBindingSource
             // 
@@ -353,9 +413,9 @@
             this.lblTethered.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTethered.Location = new System.Drawing.Point(14, 73);
             this.lblTethered.Name = "lblTethered";
-            this.lblTethered.Size = new System.Drawing.Size(106, 20);
+            this.lblTethered.Size = new System.Drawing.Size(110, 20);
             this.lblTethered.TabIndex = 14;
-            this.lblTethered.Text = "Amt Tethered";
+            this.lblTethered.Text = "Amt Tendered";
             // 
             // rbtnCard
             // 
@@ -482,66 +542,6 @@
             // 
             this.supplierOrderTableAdapter.ClearBeforeFill = true;
             // 
-            // managerIDDataGridViewTextBoxColumn
-            // 
-            this.managerIDDataGridViewTextBoxColumn.DataPropertyName = "ManagerID";
-            this.managerIDDataGridViewTextBoxColumn.HeaderText = "ManagerID";
-            this.managerIDDataGridViewTextBoxColumn.Name = "managerIDDataGridViewTextBoxColumn";
-            // 
-            // clientIDDataGridViewTextBoxColumn
-            // 
-            this.clientIDDataGridViewTextBoxColumn.DataPropertyName = "ClientID";
-            this.clientIDDataGridViewTextBoxColumn.HeaderText = "ClientID";
-            this.clientIDDataGridViewTextBoxColumn.Name = "clientIDDataGridViewTextBoxColumn";
-            // 
-            // saleChangeDataGridViewTextBoxColumn
-            // 
-            this.saleChangeDataGridViewTextBoxColumn.DataPropertyName = "SaleChange";
-            this.saleChangeDataGridViewTextBoxColumn.HeaderText = "SaleChange";
-            this.saleChangeDataGridViewTextBoxColumn.Name = "saleChangeDataGridViewTextBoxColumn";
-            // 
-            // saleAmountTenderedDataGridViewTextBoxColumn
-            // 
-            this.saleAmountTenderedDataGridViewTextBoxColumn.DataPropertyName = "SaleAmountTendered";
-            this.saleAmountTenderedDataGridViewTextBoxColumn.HeaderText = "SaleAmountTendered";
-            this.saleAmountTenderedDataGridViewTextBoxColumn.Name = "saleAmountTenderedDataGridViewTextBoxColumn";
-            // 
-            // salePaymentTypeDataGridViewTextBoxColumn
-            // 
-            this.salePaymentTypeDataGridViewTextBoxColumn.DataPropertyName = "SalePaymentType";
-            this.salePaymentTypeDataGridViewTextBoxColumn.HeaderText = "SalePaymentType";
-            this.salePaymentTypeDataGridViewTextBoxColumn.Name = "salePaymentTypeDataGridViewTextBoxColumn";
-            // 
-            // saleTotalinclVATDataGridViewTextBoxColumn
-            // 
-            this.saleTotalinclVATDataGridViewTextBoxColumn.DataPropertyName = "SaleTotal_inclVAT";
-            this.saleTotalinclVATDataGridViewTextBoxColumn.HeaderText = "SaleTotal_inclVAT";
-            this.saleTotalinclVATDataGridViewTextBoxColumn.Name = "saleTotalinclVATDataGridViewTextBoxColumn";
-            // 
-            // saleTimeDataGridViewTextBoxColumn
-            // 
-            this.saleTimeDataGridViewTextBoxColumn.DataPropertyName = "SaleTime";
-            this.saleTimeDataGridViewTextBoxColumn.HeaderText = "SaleTime";
-            this.saleTimeDataGridViewTextBoxColumn.Name = "saleTimeDataGridViewTextBoxColumn";
-            // 
-            // saleDateDataGridViewTextBoxColumn
-            // 
-            this.saleDateDataGridViewTextBoxColumn.DataPropertyName = "SaleDate";
-            this.saleDateDataGridViewTextBoxColumn.HeaderText = "SaleDate";
-            this.saleDateDataGridViewTextBoxColumn.Name = "saleDateDataGridViewTextBoxColumn";
-            // 
-            // saleTotalexclVATDataGridViewTextBoxColumn
-            // 
-            this.saleTotalexclVATDataGridViewTextBoxColumn.DataPropertyName = "SaleTotal_exclVAT";
-            this.saleTotalexclVATDataGridViewTextBoxColumn.HeaderText = "SaleTotal_exclVAT";
-            this.saleTotalexclVATDataGridViewTextBoxColumn.Name = "saleTotalexclVATDataGridViewTextBoxColumn";
-            // 
-            // saleIDDataGridViewTextBoxColumn1
-            // 
-            this.saleIDDataGridViewTextBoxColumn1.DataPropertyName = "SaleID";
-            this.saleIDDataGridViewTextBoxColumn1.HeaderText = "SaleID";
-            this.saleIDDataGridViewTextBoxColumn1.Name = "saleIDDataGridViewTextBoxColumn1";
-            // 
             // SalesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,9 +569,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360BoxBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleItemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource1)).EndInit();
             this.pnlConfirm.ResumeLayout(false);
             this.pnlConfirm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridTransaction)).EndInit();

@@ -10104,12 +10104,27 @@ SELECT SaleID, SaleTotal_exclVAT, SaleDate, SaleTime, SaleTotal_inclVAT, SalePay
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT SaleID, SaleTotal_exclVAT, SaleDate, SaleTime, SaleTotal_inclVAT, SalePaym" +
                 "entType, SaleAmountTendered, SaleChange, ClientID, ManagerID FROM dbo.Sale";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"INSERT INTO [dbo].[Sale] ([SaleID], [SaleTotal_exclVAT], [SaleDate], [SaleTime], [SaleTotal_inclVAT], [SalePaymentType], [SaleAmountTendered], [SaleChange], [ClientID], [ManagerID]) VALUES (@SaleID, @SaleTotal_exclVAT, @SaleDate, @SaleTime, @SaleTotal_inclVAT, @SalePaymentType, @SaleAmountTendered, @SaleChange, @ClientID, @ManagerID);
+SELECT SaleID, SaleTotal_exclVAT, SaleDate, SaleTime, SaleTotal_inclVAT, SalePaymentType, SaleAmountTendered, SaleChange, ClientID, ManagerID FROM Sale WHERE (SaleID = @SaleID)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaleID", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "SaleID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaleTotal_exclVAT", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 6, 2, "SaleTotal_exclVAT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaleDate", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "SaleDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaleTime", global::System.Data.SqlDbType.Time, 5, global::System.Data.ParameterDirection.Input, 0, 0, "SaleTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaleTotal_inclVAT", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 6, 2, "SaleTotal_inclVAT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SalePaymentType", global::System.Data.SqlDbType.VarChar, 4, global::System.Data.ParameterDirection.Input, 0, 0, "SalePaymentType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaleAmountTendered", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 6, 2, "SaleAmountTendered", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaleChange", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 6, 2, "SaleChange", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientID", global::System.Data.SqlDbType.VarChar, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ClientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ManagerID", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "ManagerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10393,6 +10408,69 @@ SELECT SaleID, SaleTotal_exclVAT, SaleDate, SaleTime, SaleTotal_inclVAT, SalePay
                     string Original_ClientID, 
                     string Original_ManagerID) {
             return this.Update(Original_SaleID, SaleTotal_exclVAT, SaleDate, SaleTime, SaleTotal_inclVAT, SalePaymentType, SaleAmountTendered, SaleChange, ClientID, ManagerID, Original_SaleID, Original_SaleTotal_exclVAT, Original_SaleDate, Original_SaleTime, Original_SaleTotal_inclVAT, Original_SalePaymentType, Original_SaleAmountTendered, Original_SaleChange, Original_ClientID, Original_ManagerID);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertSale(string SaleID, decimal SaleTotal_exclVAT, string SaleDate, string SaleTime, decimal SaleTotal_inclVAT, string SalePaymentType, decimal SaleAmountTendered, decimal SaleChange, string ClientID, string ManagerID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            if ((SaleID == null)) {
+                throw new global::System.ArgumentNullException("SaleID");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(SaleID));
+            }
+            command.Parameters[1].Value = ((decimal)(SaleTotal_exclVAT));
+            if ((SaleDate == null)) {
+                throw new global::System.ArgumentNullException("SaleDate");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(SaleDate));
+            }
+            if ((SaleTime == null)) {
+                throw new global::System.ArgumentNullException("SaleTime");
+            }
+            else {
+                command.Parameters[3].Value = ((string)(SaleTime));
+            }
+            command.Parameters[4].Value = ((decimal)(SaleTotal_inclVAT));
+            if ((SalePaymentType == null)) {
+                throw new global::System.ArgumentNullException("SalePaymentType");
+            }
+            else {
+                command.Parameters[5].Value = ((string)(SalePaymentType));
+            }
+            command.Parameters[6].Value = ((decimal)(SaleAmountTendered));
+            command.Parameters[7].Value = ((decimal)(SaleChange));
+            if ((ClientID == null)) {
+                throw new global::System.ArgumentNullException("ClientID");
+            }
+            else {
+                command.Parameters[8].Value = ((string)(ClientID));
+            }
+            if ((ManagerID == null)) {
+                throw new global::System.ArgumentNullException("ManagerID");
+            }
+            else {
+                command.Parameters[9].Value = ((string)(ManagerID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
