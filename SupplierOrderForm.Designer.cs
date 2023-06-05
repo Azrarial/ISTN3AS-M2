@@ -56,7 +56,6 @@
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.supplierOrderTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SupplierOrderTableAdapter();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -270,16 +269,6 @@
             // 
             this.supplierOrderTableAdapter.ClearBeforeFill = true;
             // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(12, 516);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(70, 23);
-            this.btnCancel.TabIndex = 16;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(16, 204);
@@ -372,7 +361,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1093, 554);
+            this.ClientSize = new System.Drawing.Size(1093, 498);
             this.Controls.Add(this.updwnQuantity);
             this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.btnUpdateStatus);
@@ -381,7 +370,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.dbGridSupplier);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dbGridTransaction);
@@ -432,7 +420,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn orderDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label4;

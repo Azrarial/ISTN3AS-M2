@@ -78,7 +78,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtClientID = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dbGridTransaction = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -490,16 +489,6 @@
             this.txtClientID.TabIndex = 4;
             this.txtClientID.TextChanged += new System.EventHandler(this.txtClientID_TextChanged);
             // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(12, 580);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(70, 23);
-            this.btnCancel.TabIndex = 10;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(533, 198);
@@ -552,10 +541,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1114, 615);
+            this.ClientSize = new System.Drawing.Size(1114, 583);
             this.Controls.Add(this.dbGridTransaction);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.pnlConfirm);
             this.Controls.Add(this.btnConfirmOrder);
             this.Controls.Add(this.label4);
@@ -576,11 +564,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource)).EndInit();
-         //   ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360BoxBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleItemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box1)).EndInit();
-         //   ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource1)).EndInit();
             this.pnlConfirm.ResumeLayout(false);
             this.pnlConfirm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridTransaction)).EndInit();
@@ -630,7 +618,6 @@
         private System.Windows.Forms.Button btnConfirmPayment;
         private System.Windows.Forms.TextBox txtManagerID;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dbGridTransaction;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

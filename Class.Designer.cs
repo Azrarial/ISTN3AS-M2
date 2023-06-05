@@ -85,7 +85,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.classTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.ClassTableAdapter();
             this.coachTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.CoachTableAdapter();
-            this.btnClose = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCoach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
@@ -650,24 +649,12 @@
             // 
             this.coachTableAdapter.ClearBeforeFill = true;
             // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(992, 629);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(111, 31);
-            this.btnClose.TabIndex = 9;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            // 
             // Class
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1162, 692);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtSearchClassType);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox2);
@@ -755,6 +742,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn contactNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailAddressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnClose;
     }
 }
