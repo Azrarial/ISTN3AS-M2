@@ -46,9 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ds360Box.cs">
-      <DependentUpon>ds360Box.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Asset.cs">
       <SubType>Form</SubType>
     </Compile>

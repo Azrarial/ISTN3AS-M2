@@ -57,7 +57,6 @@
             this.saleItemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.saleItemTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SaleItemTableAdapter();
             this.saleTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SaleTableAdapter();
-            this.saleTransactionTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SaleTransactionTableAdapter();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.ds360Box1 = new ISTN3AS_M2.ds360Box();
             this.saleTransactionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -283,9 +282,6 @@
             // 
             this.saleTableAdapter.ClearBeforeFill = true;
             // 
-            // saleTransactionTableAdapter
-            // 
-            this.saleTransactionTableAdapter.ClearBeforeFill = true;
             // 
             // txtTotal
             // 
@@ -561,12 +557,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360BoxBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleItemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource1)).EndInit();
             this.pnlConfirm.ResumeLayout(false);
             this.pnlConfirm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridTransaction)).EndInit();
@@ -605,7 +599,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clientIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn managerIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource saleTransactionBindingSource;
-        private ds360BoxTableAdapters.SaleTransactionTableAdapter saleTransactionTableAdapter;
         private System.Windows.Forms.TextBox txtTotal;
         private ds360Box ds360Box1;
         private System.Windows.Forms.BindingSource saleTransactionBindingSource1;

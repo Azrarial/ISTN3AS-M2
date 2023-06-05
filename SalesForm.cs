@@ -28,10 +28,6 @@ namespace ISTN3AS_M2
 
         private void SalesForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ds360Box1.SaleTransaction' table. You can move, or remove it, as needed.
-            this.saleTransactionTableAdapter.Fill(this.ds360Box1.SaleTransaction);
-            // TODO: This line of code loads data into the 'ds360Box.SaleTransaction' table. You can move, or remove it, as needed.
-            this.saleTransactionTableAdapter.Fill(this.ds360Box.SaleTransaction);
             // TODO: This line of code loads data into the 'ds360Box.Sale' table. You can move, or remove it, as needed.
             this.saleTableAdapter.Fill(this.ds360Box.Sale);
             // TODO: This line of code loads data into the 'ds360Box.Inventory' table. You can move, or remove it, as needed.
