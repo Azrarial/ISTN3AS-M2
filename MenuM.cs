@@ -47,7 +47,10 @@ namespace ISTN3AS_M2
 
         private void btnSupplier_Click(object sender, EventArgs e)
         {
-
+            SupplierOrderForm supplierorderform = new SupplierOrderForm(managerID);
+            this.Hide();
+            supplierorderform.ShowDialog();
+            this.Show();
         }
 
         private void btnAsset_Click_1(object sender, EventArgs e)

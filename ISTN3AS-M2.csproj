@@ -86,6 +86,12 @@
     <Compile Include="SalesForm.Designer.cs">
       <DependentUpon>SalesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SupplierOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierOrderForm.Designer.cs">
+      <DependentUpon>SupplierOrderForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +113,9 @@
     </Compile>
     <EmbeddedResource Include="SalesForm.resx">
       <DependentUpon>SalesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierOrderForm.resx">
+      <DependentUpon>SupplierOrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ds360Box.xsc">
       <DependentUpon>ds360Box.xsd</DependentUpon>
