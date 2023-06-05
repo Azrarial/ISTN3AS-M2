@@ -53,19 +53,19 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvSupplier = new System.Windows.Forms.DataGridView();
-            this.ds360Box = new ISTN3AS_M2.ds360Box();
-            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.supplierTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SupplierTableAdapter();
             this.supplierIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ds360Box = new ISTN3AS_M2.ds360Box();
+            this.supplierTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SupplierTableAdapter();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -73,7 +73,7 @@
             this.txtEmail.Location = new System.Drawing.Point(161, 194);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(174, 26);
+            this.txtEmail.Size = new System.Drawing.Size(174, 29);
             this.txtEmail.TabIndex = 8;
             // 
             // txtSuppName
@@ -81,7 +81,7 @@
             this.txtSuppName.Location = new System.Drawing.Point(161, 102);
             this.txtSuppName.Margin = new System.Windows.Forms.Padding(2);
             this.txtSuppName.Name = "txtSuppName";
-            this.txtSuppName.Size = new System.Drawing.Size(174, 26);
+            this.txtSuppName.Size = new System.Drawing.Size(174, 29);
             this.txtSuppName.TabIndex = 6;
             // 
             // btnUpdate
@@ -100,7 +100,7 @@
             this.txtUpdateEmail.Location = new System.Drawing.Point(163, 138);
             this.txtUpdateEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateEmail.Name = "txtUpdateEmail";
-            this.txtUpdateEmail.Size = new System.Drawing.Size(180, 26);
+            this.txtUpdateEmail.Size = new System.Drawing.Size(180, 29);
             this.txtUpdateEmail.TabIndex = 6;
             // 
             // txtUpdateContactNum
@@ -108,7 +108,7 @@
             this.txtUpdateContactNum.Location = new System.Drawing.Point(163, 91);
             this.txtUpdateContactNum.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateContactNum.Name = "txtUpdateContactNum";
-            this.txtUpdateContactNum.Size = new System.Drawing.Size(180, 26);
+            this.txtUpdateContactNum.Size = new System.Drawing.Size(180, 29);
             this.txtUpdateContactNum.TabIndex = 5;
             // 
             // txtUpdateName
@@ -116,7 +116,7 @@
             this.txtUpdateName.Location = new System.Drawing.Point(163, 47);
             this.txtUpdateName.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateName.Name = "txtUpdateName";
-            this.txtUpdateName.Size = new System.Drawing.Size(180, 26);
+            this.txtUpdateName.Size = new System.Drawing.Size(180, 29);
             this.txtUpdateName.TabIndex = 4;
             // 
             // label7
@@ -125,7 +125,7 @@
             this.label7.Location = new System.Drawing.Point(13, 135);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 20);
+            this.label7.Size = new System.Drawing.Size(48, 21);
             this.label7.TabIndex = 3;
             this.label7.Text = "Email";
             // 
@@ -135,7 +135,7 @@
             this.label6.Location = new System.Drawing.Point(13, 91);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 20);
+            this.label6.Size = new System.Drawing.Size(125, 21);
             this.label6.TabIndex = 2;
             this.label6.Text = "Contact Number";
             // 
@@ -144,7 +144,7 @@
             this.txtContactNum.Location = new System.Drawing.Point(161, 150);
             this.txtContactNum.Margin = new System.Windows.Forms.Padding(2);
             this.txtContactNum.Name = "txtContactNum";
-            this.txtContactNum.Size = new System.Drawing.Size(174, 26);
+            this.txtContactNum.Size = new System.Drawing.Size(174, 29);
             this.txtContactNum.TabIndex = 7;
             // 
             // button2
@@ -164,7 +164,7 @@
             this.label4.Location = new System.Drawing.Point(22, 194);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.Size = new System.Drawing.Size(48, 21);
             this.label4.TabIndex = 2;
             this.label4.Text = "Email";
             // 
@@ -174,7 +174,7 @@
             this.label3.Location = new System.Drawing.Point(22, 154);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 20);
+            this.label3.Size = new System.Drawing.Size(125, 21);
             this.label3.TabIndex = 1;
             this.label3.Text = "Contact Number";
             // 
@@ -184,16 +184,17 @@
             this.label1.Location = new System.Drawing.Point(22, 106);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
+            this.label1.Size = new System.Drawing.Size(114, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Supplier Name";
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox3.Controls.Add(this.btnDelete);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(784, 231);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(781, 220);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -219,7 +220,7 @@
             this.label2.Location = new System.Drawing.Point(13, 32);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(337, 20);
+            this.label2.Size = new System.Drawing.Size(294, 21);
             this.label2.TabIndex = 9;
             this.label2.Text = "Click button below to delete selected row";
             // 
@@ -228,13 +229,13 @@
             this.txtSupplierID.Location = new System.Drawing.Point(161, 32);
             this.txtSupplierID.Margin = new System.Windows.Forms.Padding(2);
             this.txtSupplierID.Name = "txtSupplierID";
-            this.txtSupplierID.Size = new System.Drawing.Size(174, 26);
+            this.txtSupplierID.Size = new System.Drawing.Size(174, 29);
             this.txtSupplierID.TabIndex = 4;
             // 
             // txtSearchSupplier
             // 
             this.txtSearchSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchSupplier.Location = new System.Drawing.Point(301, 27);
+            this.txtSearchSupplier.Location = new System.Drawing.Point(465, 24);
             this.txtSearchSupplier.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearchSupplier.Name = "txtSearchSupplier";
             this.txtSearchSupplier.Size = new System.Drawing.Size(200, 26);
@@ -247,23 +248,24 @@
             this.label5.Location = new System.Drawing.Point(13, 47);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 20);
+            this.label5.Size = new System.Drawing.Size(114, 21);
             this.label5.TabIndex = 1;
             this.label5.Text = "Supplier Name";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(41, 24);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(222, 26);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(211, 20);
+            this.label8.Size = new System.Drawing.Size(186, 21);
             this.label8.TabIndex = 9;
             this.label8.Text = "Search by Supplier Name";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Controls.Add(this.btnAdd);
             this.groupBox2.Controls.Add(this.txtEmail);
             this.groupBox2.Controls.Add(this.txtContactNum);
@@ -273,7 +275,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(403, 220);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
@@ -296,6 +298,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Controls.Add(this.txtUpdateEmail);
             this.groupBox1.Controls.Add(this.txtUpdateContactNum);
@@ -303,7 +306,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(24, 220);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
@@ -316,6 +319,7 @@
             // dgvSupplier
             // 
             this.dgvSupplier.AutoGenerateColumns = false;
+            this.dgvSupplier.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.supplierIDDataGridViewTextBoxColumn,
@@ -323,27 +327,13 @@
             this.contactNumberDataGridViewTextBoxColumn,
             this.emailAddressDataGridViewTextBoxColumn});
             this.dgvSupplier.DataSource = this.supplierBindingSource;
-            this.dgvSupplier.Location = new System.Drawing.Point(76, 85);
+            this.dgvSupplier.Location = new System.Drawing.Point(339, 64);
             this.dgvSupplier.Margin = new System.Windows.Forms.Padding(2);
             this.dgvSupplier.Name = "dgvSupplier";
             this.dgvSupplier.RowHeadersWidth = 51;
             this.dgvSupplier.RowTemplate.Height = 24;
-            this.dgvSupplier.Size = new System.Drawing.Size(788, 122);
+            this.dgvSupplier.Size = new System.Drawing.Size(455, 122);
             this.dgvSupplier.TabIndex = 5;
-            // 
-            // ds360Box
-            // 
-            this.ds360Box.DataSetName = "ds360Box";
-            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // supplierBindingSource
-            // 
-            this.supplierBindingSource.DataMember = "Supplier";
-            this.supplierBindingSource.DataSource = this.ds360Box;
-            // 
-            // supplierTableAdapter
-            // 
-            this.supplierTableAdapter.ClearBeforeFill = true;
             // 
             // supplierIDDataGridViewTextBoxColumn
             // 
@@ -369,10 +359,25 @@
             this.emailAddressDataGridViewTextBoxColumn.HeaderText = "EmailAddress";
             this.emailAddressDataGridViewTextBoxColumn.Name = "emailAddressDataGridViewTextBoxColumn";
             // 
+            // supplierBindingSource
+            // 
+            this.supplierBindingSource.DataMember = "Supplier";
+            this.supplierBindingSource.DataSource = this.ds360Box;
+            // 
+            // ds360Box
+            // 
+            this.ds360Box.DataSetName = "ds360Box";
+            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // supplierTableAdapter
+            // 
+            this.supplierTableAdapter.ClearBeforeFill = true;
+            // 
             // Supplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1160, 541);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.txtSearchSupplier);
@@ -380,7 +385,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvSupplier);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Supplier";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Supplier";
             this.Load += new System.EventHandler(this.Supplier_Load);
             this.groupBox3.ResumeLayout(false);
@@ -390,8 +397,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

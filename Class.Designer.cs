@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -88,6 +85,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.classTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.ClassTableAdapter();
             this.coachTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.CoachTableAdapter();
+            this.btnClose = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCoach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
@@ -106,7 +104,7 @@
             this.label11.Location = new System.Drawing.Point(18, 37);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 13);
+            this.label11.Size = new System.Drawing.Size(66, 13);
             this.label11.TabIndex = 8;
             this.label11.Text = "Group Type";
             // 
@@ -134,7 +132,7 @@
             // txtSearchClassType
             // 
             this.txtSearchClassType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchClassType.Location = new System.Drawing.Point(144, 10);
+            this.txtSearchClassType.Location = new System.Drawing.Point(199, 22);
             this.txtSearchClassType.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearchClassType.Name = "txtSearchClassType";
             this.txtSearchClassType.Size = new System.Drawing.Size(210, 26);
@@ -144,18 +142,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 10);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(28, 24);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 13);
+            this.label4.Size = new System.Drawing.Size(154, 21);
             this.label4.TabIndex = 13;
             this.label4.Text = "Search by Class Type";
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(17, 72);
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(67, 89);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 31);
@@ -166,6 +164,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.dgvCoach);
             this.groupBox2.Controls.Add(this.SpinCurrent);
@@ -185,8 +184,8 @@
             this.groupBox2.Controls.Add(this.txtCoachID);
             this.groupBox2.Controls.Add(this.txtClassID);
             this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(293, 229);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(314, 230);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -209,14 +208,7 @@
             // dgvCoach
             // 
             this.dgvCoach.AutoGenerateColumns = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCoach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCoach.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvCoach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCoach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.coachIDDataGridViewTextBoxColumn1,
@@ -226,25 +218,9 @@
             this.emailAddressDataGridViewTextBoxColumn,
             this.passwordDataGridViewTextBoxColumn});
             this.dgvCoach.DataSource = this.coachBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCoach.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCoach.Location = new System.Drawing.Point(16, 37);
             this.dgvCoach.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCoach.Name = "dgvCoach";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCoach.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCoach.RowHeadersWidth = 51;
             this.dgvCoach.RowTemplate.Height = 24;
             this.dgvCoach.Size = new System.Drawing.Size(555, 122);
@@ -302,7 +278,7 @@
             this.SpinCurrent.Location = new System.Drawing.Point(436, 292);
             this.SpinCurrent.Margin = new System.Windows.Forms.Padding(2);
             this.SpinCurrent.Name = "SpinCurrent";
-            this.SpinCurrent.Size = new System.Drawing.Size(134, 20);
+            this.SpinCurrent.Size = new System.Drawing.Size(134, 22);
             this.SpinCurrent.TabIndex = 29;
             // 
             // SpinMax
@@ -310,7 +286,7 @@
             this.SpinMax.Location = new System.Drawing.Point(436, 249);
             this.SpinMax.Margin = new System.Windows.Forms.Padding(2);
             this.SpinMax.Name = "SpinMax";
-            this.SpinMax.Size = new System.Drawing.Size(134, 20);
+            this.SpinMax.Size = new System.Drawing.Size(134, 22);
             this.SpinMax.TabIndex = 10;
             // 
             // dateTimePicker2
@@ -320,7 +296,7 @@
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.ShowUpDown = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(151, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(151, 22);
             this.dateTimePicker2.TabIndex = 28;
             // 
             // dateTimePicker1
@@ -330,7 +306,7 @@
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(151, 22);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // cmbClassType
@@ -365,7 +341,7 @@
             this.label10.Location = new System.Drawing.Point(284, 292);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 13);
+            this.label10.Size = new System.Drawing.Size(92, 13);
             this.label10.TabIndex = 25;
             this.label10.Text = "Current Capacity";
             // 
@@ -375,7 +351,7 @@
             this.label9.Location = new System.Drawing.Point(284, 249);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 13);
+            this.label9.Size = new System.Drawing.Size(74, 13);
             this.label9.TabIndex = 23;
             this.label9.Text = "Max Capacity";
             // 
@@ -385,7 +361,7 @@
             this.label8.Location = new System.Drawing.Point(283, 209);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.Size = new System.Drawing.Size(54, 13);
             this.label8.TabIndex = 22;
             this.label8.Text = "End Time";
             // 
@@ -395,7 +371,7 @@
             this.label7.Location = new System.Drawing.Point(284, 175);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
+            this.label7.Size = new System.Drawing.Size(58, 13);
             this.label7.TabIndex = 21;
             this.label7.Text = "Start Time";
             // 
@@ -415,7 +391,7 @@
             this.label5.Location = new System.Drawing.Point(12, 286);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 13);
+            this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 19;
             this.label5.Text = "Group Type";
             // 
@@ -425,7 +401,7 @@
             this.label3.Location = new System.Drawing.Point(12, 238);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "CoachID";
             // 
@@ -435,7 +411,7 @@
             this.chkPublic.Location = new System.Drawing.Point(436, 333);
             this.chkPublic.Margin = new System.Windows.Forms.Padding(2);
             this.chkPublic.Name = "chkPublic";
-            this.chkPublic.Size = new System.Drawing.Size(83, 17);
+            this.chkPublic.Size = new System.Drawing.Size(86, 17);
             this.chkPublic.TabIndex = 16;
             this.chkPublic.Text = "Class Public";
             this.chkPublic.UseVisualStyleBackColor = true;
@@ -446,7 +422,7 @@
             this.txtCoachID.Margin = new System.Windows.Forms.Padding(2);
             this.txtCoachID.Name = "txtCoachID";
             this.txtCoachID.ReadOnly = true;
-            this.txtCoachID.Size = new System.Drawing.Size(134, 20);
+            this.txtCoachID.Size = new System.Drawing.Size(134, 22);
             this.txtCoachID.TabIndex = 10;
             // 
             // txtClassID
@@ -455,7 +431,7 @@
             this.txtClassID.Margin = new System.Windows.Forms.Padding(2);
             this.txtClassID.Name = "txtClassID";
             this.txtClassID.ReadOnly = true;
-            this.txtClassID.Size = new System.Drawing.Size(134, 20);
+            this.txtClassID.Size = new System.Drawing.Size(134, 22);
             this.txtClassID.TabIndex = 9;
             // 
             // button3
@@ -471,14 +447,15 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(879, 234);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(913, 230);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(390, 163);
+            this.groupBox3.Size = new System.Drawing.Size(238, 163);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Delete";
@@ -486,10 +463,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 32);
+            this.label2.Location = new System.Drawing.Point(14, 41);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 13);
+            this.label2.Size = new System.Drawing.Size(222, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Click button below to delete selected row";
             // 
@@ -509,6 +486,7 @@
             // dgvClass
             // 
             this.dgvClass.AutoGenerateColumns = false;
+            this.dgvClass.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.classIDDataGridViewTextBoxColumn,
@@ -526,7 +504,7 @@
             this.dgvClass.Name = "dgvClass";
             this.dgvClass.RowHeadersWidth = 51;
             this.dgvClass.RowTemplate.Height = 24;
-            this.dgvClass.Size = new System.Drawing.Size(1226, 155);
+            this.dgvClass.Size = new System.Drawing.Size(1140, 155);
             this.dgvClass.TabIndex = 11;
             this.dgvClass.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvClass_RowHeaderMouseClick);
             // 
@@ -608,7 +586,7 @@
             this.label12.Location = new System.Drawing.Point(21, 127);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 13);
+            this.label12.Size = new System.Drawing.Size(58, 13);
             this.label12.TabIndex = 12;
             this.label12.Text = "Start Time";
             // 
@@ -619,7 +597,7 @@
             this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.ShowUpDown = true;
-            this.dateTimePicker4.Size = new System.Drawing.Size(136, 20);
+            this.dateTimePicker4.Size = new System.Drawing.Size(136, 22);
             this.dateTimePicker4.TabIndex = 11;
             // 
             // dateTimePicker3
@@ -629,11 +607,12 @@
             this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.ShowUpDown = true;
-            this.dateTimePicker3.Size = new System.Drawing.Size(136, 20);
+            this.dateTimePicker3.Size = new System.Drawing.Size(136, 22);
             this.dateTimePicker3.TabIndex = 10;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.dateTimePicker4);
@@ -643,8 +622,8 @@
             this.groupBox1.Controls.Add(this.cmbUpdateClass);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 230);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(11, 230);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -659,7 +638,7 @@
             this.label13.Location = new System.Drawing.Point(21, 171);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 13);
+            this.label13.Size = new System.Drawing.Size(54, 13);
             this.label13.TabIndex = 13;
             this.label13.Text = "End Time";
             // 
@@ -671,17 +650,31 @@
             // 
             this.coachTableAdapter.ClearBeforeFill = true;
             // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(992, 629);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(111, 31);
+            this.btnClose.TabIndex = 9;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            // 
             // Class
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1270, 701);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(1162, 692);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtSearchClassType);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dgvClass);
             this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Class";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Class";
@@ -762,5 +755,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn contactNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailAddressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnClose;
     }
 }

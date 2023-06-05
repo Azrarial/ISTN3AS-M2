@@ -80,7 +80,7 @@
             this.btnUpdateAsset.Location = new System.Drawing.Point(260, 82);
             this.btnUpdateAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateAsset.Name = "btnUpdateAsset";
-            this.btnUpdateAsset.Size = new System.Drawing.Size(72, 43);
+            this.btnUpdateAsset.Size = new System.Drawing.Size(106, 51);
             this.btnUpdateAsset.TabIndex = 21;
             this.btnUpdateAsset.Text = "Update Item";
             this.btnUpdateAsset.UseVisualStyleBackColor = true;
@@ -91,21 +91,22 @@
             this.txtUpdateQuantity.Location = new System.Drawing.Point(141, 38);
             this.txtUpdateQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateQuantity.Name = "txtUpdateQuantity";
-            this.txtUpdateQuantity.Size = new System.Drawing.Size(92, 20);
+            this.txtUpdateQuantity.Size = new System.Drawing.Size(92, 22);
             this.txtUpdateQuantity.TabIndex = 17;
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.btnUpdateAsset);
             this.panel2.Controls.Add(this.txtUpdateSelling);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtCost);
-            this.panel2.Controls.Add(this.btnUpdateAsset);
             this.panel2.Controls.Add(this.UpdateQuantity);
             this.panel2.Controls.Add(this.txtUpdateQuantity);
-            this.panel2.Location = new System.Drawing.Point(534, 189);
+            this.panel2.Location = new System.Drawing.Point(534, 185);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(389, 226);
+            this.panel2.Size = new System.Drawing.Size(389, 230);
             this.panel2.TabIndex = 5;
             // 
             // label4
@@ -114,7 +115,7 @@
             this.label4.Location = new System.Drawing.Point(28, 97);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 13);
+            this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 25;
             this.label4.Text = "Update Selling Price";
             // 
@@ -123,7 +124,7 @@
             this.txtUpdateSelling.Location = new System.Drawing.Point(141, 96);
             this.txtUpdateSelling.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateSelling.Name = "txtUpdateSelling";
-            this.txtUpdateSelling.Size = new System.Drawing.Size(92, 20);
+            this.txtUpdateSelling.Size = new System.Drawing.Size(92, 22);
             this.txtUpdateSelling.TabIndex = 24;
             // 
             // label3
@@ -132,7 +133,7 @@
             this.label3.Location = new System.Drawing.Point(28, 157);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.Size = new System.Drawing.Size(98, 13);
             this.label3.TabIndex = 23;
             this.label3.Text = "Update Cost Price";
             // 
@@ -141,7 +142,7 @@
             this.txtCost.Location = new System.Drawing.Point(141, 154);
             this.txtCost.Margin = new System.Windows.Forms.Padding(2);
             this.txtCost.Name = "txtCost";
-            this.txtCost.Size = new System.Drawing.Size(92, 20);
+            this.txtCost.Size = new System.Drawing.Size(92, 22);
             this.txtCost.TabIndex = 22;
             // 
             // UpdateQuantity
@@ -150,16 +151,16 @@
             this.UpdateQuantity.Location = new System.Drawing.Point(28, 41);
             this.UpdateQuantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UpdateQuantity.Name = "UpdateQuantity";
-            this.UpdateQuantity.Size = new System.Drawing.Size(84, 13);
+            this.UpdateQuantity.Size = new System.Drawing.Size(92, 13);
             this.UpdateQuantity.TabIndex = 18;
             this.UpdateQuantity.Text = "Update Quantity";
             // 
             // btnAddInv
             // 
-            this.btnAddInv.Location = new System.Drawing.Point(386, 173);
+            this.btnAddInv.Location = new System.Drawing.Point(347, 173);
             this.btnAddInv.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddInv.Name = "btnAddInv";
-            this.btnAddInv.Size = new System.Drawing.Size(75, 43);
+            this.btnAddInv.Size = new System.Drawing.Size(86, 38);
             this.btnAddInv.TabIndex = 38;
             this.btnAddInv.Text = "Add Item";
             this.btnAddInv.UseVisualStyleBackColor = true;
@@ -168,25 +169,26 @@
             // ConditionLabel
             // 
             this.ConditionLabel.AutoSize = true;
-            this.ConditionLabel.Location = new System.Drawing.Point(101, 139);
+            this.ConditionLabel.Location = new System.Drawing.Point(47, 140);
             this.ConditionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ConditionLabel.Name = "ConditionLabel";
-            this.ConditionLabel.Size = new System.Drawing.Size(83, 13);
+            this.ConditionLabel.Size = new System.Drawing.Size(91, 13);
             this.ConditionLabel.TabIndex = 37;
             this.ConditionLabel.Text = "Item Description";
             // 
             // AssNameLabel
             // 
             this.AssNameLabel.AutoSize = true;
-            this.AssNameLabel.Location = new System.Drawing.Point(101, 98);
+            this.AssNameLabel.Location = new System.Drawing.Point(61, 99);
             this.AssNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AssNameLabel.Name = "AssNameLabel";
-            this.AssNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.AssNameLabel.Size = new System.Drawing.Size(61, 13);
             this.AssNameLabel.TabIndex = 36;
             this.AssNameLabel.Text = "Item Name";
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.txtSellingPrice);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnAddInv);
@@ -203,9 +205,9 @@
             this.panel1.Controls.Add(this.txtCostPrice);
             this.panel1.Controls.Add(this.btnGenerateID);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(6, 189);
+            this.panel1.Location = new System.Drawing.Point(6, 185);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(522, 226);
+            this.panel1.Size = new System.Drawing.Size(522, 230);
             this.panel1.TabIndex = 4;
             // 
             // txtSellingPrice
@@ -213,16 +215,16 @@
             this.txtSellingPrice.Location = new System.Drawing.Point(188, 179);
             this.txtSellingPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtSellingPrice.Name = "txtSellingPrice";
-            this.txtSellingPrice.Size = new System.Drawing.Size(84, 20);
+            this.txtSellingPrice.Size = new System.Drawing.Size(84, 22);
             this.txtSellingPrice.TabIndex = 40;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(101, 182);
+            this.label2.Location = new System.Drawing.Point(53, 182);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 39;
             this.label2.Text = "Selling Price";
             // 
@@ -231,83 +233,83 @@
             this.txtItemDescr.Location = new System.Drawing.Point(188, 137);
             this.txtItemDescr.Margin = new System.Windows.Forms.Padding(2);
             this.txtItemDescr.Name = "txtItemDescr";
-            this.txtItemDescr.Size = new System.Drawing.Size(84, 20);
+            this.txtItemDescr.Size = new System.Drawing.Size(84, 22);
             this.txtItemDescr.TabIndex = 35;
             // 
             // txtItemName
             // 
-            this.txtItemName.Location = new System.Drawing.Point(188, 95);
+            this.txtItemName.Location = new System.Drawing.Point(188, 93);
             this.txtItemName.Margin = new System.Windows.Forms.Padding(2);
             this.txtItemName.Name = "txtItemName";
-            this.txtItemName.Size = new System.Drawing.Size(84, 20);
+            this.txtItemName.Size = new System.Drawing.Size(84, 22);
             this.txtItemName.TabIndex = 34;
             // 
             // txtItemID
             // 
-            this.txtItemID.Location = new System.Drawing.Point(188, 56);
+            this.txtItemID.Location = new System.Drawing.Point(188, 44);
             this.txtItemID.Margin = new System.Windows.Forms.Padding(2);
             this.txtItemID.Name = "txtItemID";
             this.txtItemID.ReadOnly = true;
-            this.txtItemID.Size = new System.Drawing.Size(84, 20);
+            this.txtItemID.Size = new System.Drawing.Size(84, 22);
             this.txtItemID.TabIndex = 33;
             // 
             // CostPrice
             // 
             this.CostPrice.AutoSize = true;
-            this.CostPrice.Location = new System.Drawing.Point(327, 102);
+            this.CostPrice.Location = new System.Drawing.Point(311, 96);
             this.CostPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CostPrice.Name = "CostPrice";
-            this.CostPrice.Size = new System.Drawing.Size(55, 13);
+            this.CostPrice.Size = new System.Drawing.Size(57, 13);
             this.CostPrice.TabIndex = 32;
             this.CostPrice.Text = "Cost Price";
             // 
             // Type
             // 
             this.Type.AutoSize = true;
-            this.Type.Location = new System.Drawing.Point(327, 140);
+            this.Type.Location = new System.Drawing.Point(324, 140);
             this.Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(31, 13);
+            this.Type.Size = new System.Drawing.Size(30, 13);
             this.Type.TabIndex = 31;
             this.Type.Text = "Type";
             // 
             // Quantity
             // 
             this.Quantity.AutoSize = true;
-            this.Quantity.Location = new System.Drawing.Point(327, 61);
+            this.Quantity.Location = new System.Drawing.Point(317, 47);
             this.Quantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(46, 13);
+            this.Quantity.Size = new System.Drawing.Size(51, 13);
             this.Quantity.TabIndex = 30;
             this.Quantity.Text = "Quantity";
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(386, 58);
+            this.txtQuantity.Location = new System.Drawing.Point(386, 44);
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(84, 20);
+            this.txtQuantity.Size = new System.Drawing.Size(84, 22);
             this.txtQuantity.TabIndex = 29;
             // 
             // txtType
             // 
-            this.txtType.Location = new System.Drawing.Point(386, 136);
+            this.txtType.Location = new System.Drawing.Point(386, 137);
             this.txtType.Margin = new System.Windows.Forms.Padding(2);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(84, 20);
+            this.txtType.Size = new System.Drawing.Size(84, 22);
             this.txtType.TabIndex = 28;
             // 
             // txtCostPrice
             // 
-            this.txtCostPrice.Location = new System.Drawing.Point(386, 98);
+            this.txtCostPrice.Location = new System.Drawing.Point(386, 90);
             this.txtCostPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtCostPrice.Name = "txtCostPrice";
-            this.txtCostPrice.Size = new System.Drawing.Size(84, 20);
+            this.txtCostPrice.Size = new System.Drawing.Size(84, 22);
             this.txtCostPrice.TabIndex = 27;
             // 
             // btnGenerateID
             // 
-            this.btnGenerateID.Location = new System.Drawing.Point(17, 49);
+            this.btnGenerateID.Location = new System.Drawing.Point(12, 41);
             this.btnGenerateID.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerateID.Name = "btnGenerateID";
             this.btnGenerateID.Size = new System.Drawing.Size(150, 25);
@@ -319,28 +321,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 13);
+            this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Inventory";
             // 
             // pnlAsset
             // 
+            this.pnlAsset.BackColor = System.Drawing.SystemColors.Control;
             this.pnlAsset.Controls.Add(this.btnDeleteInv);
             this.pnlAsset.Controls.Add(this.dgvInventory);
-            this.pnlAsset.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlAsset.Location = new System.Drawing.Point(0, 0);
+            this.pnlAsset.Location = new System.Drawing.Point(6, 8);
             this.pnlAsset.Name = "pnlAsset";
-            this.pnlAsset.Size = new System.Drawing.Size(935, 183);
+            this.pnlAsset.Size = new System.Drawing.Size(917, 171);
             this.pnlAsset.TabIndex = 3;
             // 
             // btnDeleteInv
             // 
-            this.btnDeleteInv.Location = new System.Drawing.Point(776, 63);
+            this.btnDeleteInv.Location = new System.Drawing.Point(788, 58);
             this.btnDeleteInv.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteInv.Name = "btnDeleteInv";
-            this.btnDeleteInv.Size = new System.Drawing.Size(72, 56);
+            this.btnDeleteInv.Size = new System.Drawing.Size(106, 56);
             this.btnDeleteInv.TabIndex = 19;
             this.btnDeleteInv.Text = "Delete Item";
             this.btnDeleteInv.UseVisualStyleBackColor = true;
@@ -349,6 +351,7 @@
             // dgvInventory
             // 
             this.dgvInventory.AutoGenerateColumns = false;
+            this.dgvInventory.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.itemIDDataGridViewTextBoxColumn,
@@ -359,9 +362,9 @@
             this.costPriceDataGridViewTextBoxColumn,
             this.quantityDataGridViewTextBoxColumn});
             this.dgvInventory.DataSource = this.inventoryBindingSource;
-            this.dgvInventory.Location = new System.Drawing.Point(12, 21);
+            this.dgvInventory.Location = new System.Drawing.Point(9, 9);
             this.dgvInventory.Name = "dgvInventory";
-            this.dgvInventory.Size = new System.Drawing.Size(748, 150);
+            this.dgvInventory.Size = new System.Drawing.Size(751, 150);
             this.dgvInventory.TabIndex = 0;
             // 
             // itemIDDataGridViewTextBoxColumn
@@ -424,10 +427,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 418);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(930, 422);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlAsset);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Inventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory";

@@ -122,6 +122,9 @@
     <EmbeddedResource Include="Asset.resx">
       <DependentUpon>Asset.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Class.resx">
       <DependentUpon>Class.cs</DependentUpon>
     </EmbeddedResource>

@@ -149,6 +149,11 @@ namespace ISTN3AS_M2
 
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
 

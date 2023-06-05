@@ -77,6 +77,7 @@
             // dbGridAssets
             // 
             this.dbGridAssets.AutoGenerateColumns = false;
+            this.dbGridAssets.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dbGridAssets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dbGridAssets.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.assetIDDataGridViewTextBoxColumn,
@@ -163,6 +164,7 @@
             // 
             // dbGridTransaction
             // 
+            this.dbGridTransaction.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dbGridTransaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dbGridTransaction.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -201,6 +203,7 @@
             // dbGridSupplier
             // 
             this.dbGridSupplier.AutoGenerateColumns = false;
+            this.dbGridSupplier.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dbGridSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dbGridSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.supplierOrderIDDataGridViewTextBoxColumn,
@@ -291,7 +294,7 @@
             // 
             this.txtTotal.Location = new System.Drawing.Point(836, 206);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(142, 20);
+            this.txtTotal.Size = new System.Drawing.Size(142, 22);
             this.txtTotal.TabIndex = 18;
             // 
             // label4
@@ -355,7 +358,7 @@
             0,
             0});
             this.updwnQuantity.Name = "updwnQuantity";
-            this.updwnQuantity.Size = new System.Drawing.Size(120, 20);
+            this.updwnQuantity.Size = new System.Drawing.Size(120, 22);
             this.updwnQuantity.TabIndex = 24;
             this.updwnQuantity.Value = new decimal(new int[] {
             1,
@@ -368,6 +371,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1093, 554);
             this.Controls.Add(this.updwnQuantity);
             this.Controls.Add(this.cmbStatus);
@@ -384,6 +388,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dbGridAssets);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "SupplierOrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SupplierOrderForm";
