@@ -72,20 +72,20 @@
             // 
             // pnlAsset
             // 
+            this.pnlAsset.BackColor = System.Drawing.SystemColors.Control;
             this.pnlAsset.Controls.Add(this.btnDeleteAsset);
             this.pnlAsset.Controls.Add(this.dgvAsset);
-            this.pnlAsset.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlAsset.Location = new System.Drawing.Point(0, 0);
+            this.pnlAsset.Location = new System.Drawing.Point(5, 4);
             this.pnlAsset.Name = "pnlAsset";
-            this.pnlAsset.Size = new System.Drawing.Size(825, 183);
+            this.pnlAsset.Size = new System.Drawing.Size(820, 179);
             this.pnlAsset.TabIndex = 0;
             // 
             // btnDeleteAsset
             // 
-            this.btnDeleteAsset.Location = new System.Drawing.Point(680, 61);
+            this.btnDeleteAsset.Location = new System.Drawing.Point(684, 61);
             this.btnDeleteAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteAsset.Name = "btnDeleteAsset";
-            this.btnDeleteAsset.Size = new System.Drawing.Size(72, 56);
+            this.btnDeleteAsset.Size = new System.Drawing.Size(106, 56);
             this.btnDeleteAsset.TabIndex = 19;
             this.btnDeleteAsset.Text = "Delete Asset";
             this.btnDeleteAsset.UseVisualStyleBackColor = true;
@@ -94,6 +94,7 @@
             // dgvAsset
             // 
             this.dgvAsset.AutoGenerateColumns = false;
+            this.dgvAsset.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvAsset.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAsset.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.assetIDDataGridViewTextBoxColumn,
@@ -103,7 +104,7 @@
             this.typeDataGridViewTextBoxColumn,
             this.quantityDataGridViewTextBoxColumn});
             this.dgvAsset.DataSource = this.assetBindingSource;
-            this.dgvAsset.Location = new System.Drawing.Point(12, 21);
+            this.dgvAsset.Location = new System.Drawing.Point(12, 13);
             this.dgvAsset.Name = "dgvAsset";
             this.dgvAsset.Size = new System.Drawing.Size(645, 150);
             this.dgvAsset.TabIndex = 0;
@@ -160,6 +161,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.btnAddAsset);
             this.panel1.Controls.Add(this.ConditionLabel);
             this.panel1.Controls.Add(this.AssNameLabel);
@@ -181,10 +183,10 @@
             // 
             // btnAddAsset
             // 
-            this.btnAddAsset.Location = new System.Drawing.Point(333, 173);
+            this.btnAddAsset.Location = new System.Drawing.Point(288, 183);
             this.btnAddAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddAsset.Name = "btnAddAsset";
-            this.btnAddAsset.Size = new System.Drawing.Size(75, 43);
+            this.btnAddAsset.Size = new System.Drawing.Size(113, 35);
             this.btnAddAsset.TabIndex = 38;
             this.btnAddAsset.Text = "Add Asset";
             this.btnAddAsset.UseVisualStyleBackColor = true;
@@ -193,30 +195,30 @@
             // ConditionLabel
             // 
             this.ConditionLabel.AutoSize = true;
-            this.ConditionLabel.Location = new System.Drawing.Point(80, 138);
+            this.ConditionLabel.Location = new System.Drawing.Point(51, 156);
             this.ConditionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ConditionLabel.Name = "ConditionLabel";
-            this.ConditionLabel.Size = new System.Drawing.Size(51, 13);
+            this.ConditionLabel.Size = new System.Drawing.Size(59, 13);
             this.ConditionLabel.TabIndex = 37;
             this.ConditionLabel.Text = "Condition";
             // 
             // AssNameLabel
             // 
             this.AssNameLabel.AutoSize = true;
-            this.AssNameLabel.Location = new System.Drawing.Point(68, 99);
+            this.AssNameLabel.Location = new System.Drawing.Point(44, 89);
             this.AssNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AssNameLabel.Name = "AssNameLabel";
-            this.AssNameLabel.Size = new System.Drawing.Size(64, 13);
+            this.AssNameLabel.Size = new System.Drawing.Size(66, 13);
             this.AssNameLabel.TabIndex = 36;
             this.AssNameLabel.Text = "Asset Name";
             // 
             // txtCondition
             // 
-            this.txtCondition.Location = new System.Drawing.Point(135, 134);
+            this.txtCondition.Location = new System.Drawing.Point(135, 153);
             this.txtCondition.Margin = new System.Windows.Forms.Padding(2);
             this.txtCondition.Name = "txtCondition";
             this.txtCondition.ReadOnly = true;
-            this.txtCondition.Size = new System.Drawing.Size(84, 20);
+            this.txtCondition.Size = new System.Drawing.Size(84, 22);
             this.txtCondition.TabIndex = 35;
             // 
             // txtAssName
@@ -225,54 +227,54 @@
             this.txtAssName.Margin = new System.Windows.Forms.Padding(2);
             this.txtAssName.Name = "txtAssName";
             this.txtAssName.ReadOnly = true;
-            this.txtAssName.Size = new System.Drawing.Size(84, 20);
+            this.txtAssName.Size = new System.Drawing.Size(84, 22);
             this.txtAssName.TabIndex = 34;
             // 
             // txtAssetID
             // 
-            this.txtAssetID.Location = new System.Drawing.Point(135, 56);
+            this.txtAssetID.Location = new System.Drawing.Point(135, 42);
             this.txtAssetID.Margin = new System.Windows.Forms.Padding(2);
             this.txtAssetID.Name = "txtAssetID";
             this.txtAssetID.ReadOnly = true;
-            this.txtAssetID.Size = new System.Drawing.Size(84, 20);
+            this.txtAssetID.Size = new System.Drawing.Size(84, 22);
             this.txtAssetID.TabIndex = 33;
             // 
             // CostPrice
             // 
             this.CostPrice.AutoSize = true;
-            this.CostPrice.Location = new System.Drawing.Point(274, 138);
+            this.CostPrice.Location = new System.Drawing.Point(262, 150);
             this.CostPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CostPrice.Name = "CostPrice";
-            this.CostPrice.Size = new System.Drawing.Size(55, 13);
+            this.CostPrice.Size = new System.Drawing.Size(57, 13);
             this.CostPrice.TabIndex = 32;
             this.CostPrice.Text = "Cost Price";
             // 
             // Type
             // 
             this.Type.AutoSize = true;
-            this.Type.Location = new System.Drawing.Point(298, 95);
+            this.Type.Location = new System.Drawing.Point(274, 98);
             this.Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(31, 13);
+            this.Type.Size = new System.Drawing.Size(30, 13);
             this.Type.TabIndex = 31;
             this.Type.Text = "Type";
             // 
             // Quantity
             // 
             this.Quantity.AutoSize = true;
-            this.Quantity.Location = new System.Drawing.Point(283, 60);
+            this.Quantity.Location = new System.Drawing.Point(262, 45);
             this.Quantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(46, 13);
+            this.Quantity.Size = new System.Drawing.Size(51, 13);
             this.Quantity.TabIndex = 30;
             this.Quantity.Text = "Quantity";
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(333, 58);
+            this.txtQuantity.Location = new System.Drawing.Point(333, 42);
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(84, 20);
+            this.txtQuantity.Size = new System.Drawing.Size(84, 22);
             this.txtQuantity.TabIndex = 29;
             // 
             // txtType
@@ -280,20 +282,20 @@
             this.txtType.Location = new System.Drawing.Point(333, 95);
             this.txtType.Margin = new System.Windows.Forms.Padding(2);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(84, 20);
+            this.txtType.Size = new System.Drawing.Size(84, 22);
             this.txtType.TabIndex = 28;
             // 
             // txtCostPrice
             // 
-            this.txtCostPrice.Location = new System.Drawing.Point(333, 136);
+            this.txtCostPrice.Location = new System.Drawing.Point(333, 147);
             this.txtCostPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtCostPrice.Name = "txtCostPrice";
-            this.txtCostPrice.Size = new System.Drawing.Size(84, 20);
+            this.txtCostPrice.Size = new System.Drawing.Size(84, 22);
             this.txtCostPrice.TabIndex = 27;
             // 
             // btnGenerateID
             // 
-            this.btnGenerateID.Location = new System.Drawing.Point(17, 49);
+            this.btnGenerateID.Location = new System.Drawing.Point(18, 39);
             this.btnGenerateID.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerateID.Name = "btnGenerateID";
             this.btnGenerateID.Size = new System.Drawing.Size(113, 25);
@@ -307,12 +309,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(17, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Asset";
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.btnUpdateAsset);
             this.panel2.Controls.Add(this.cmbUpdateCondition);
             this.panel2.Controls.Add(this.UpdateCondition);
@@ -325,10 +328,10 @@
             // 
             // btnUpdateAsset
             // 
-            this.btnUpdateAsset.Location = new System.Drawing.Point(244, 40);
+            this.btnUpdateAsset.Location = new System.Drawing.Point(253, 76);
             this.btnUpdateAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateAsset.Name = "btnUpdateAsset";
-            this.btnUpdateAsset.Size = new System.Drawing.Size(72, 43);
+            this.btnUpdateAsset.Size = new System.Drawing.Size(106, 56);
             this.btnUpdateAsset.TabIndex = 21;
             this.btnUpdateAsset.Text = "Update Asset";
             this.btnUpdateAsset.UseVisualStyleBackColor = true;
@@ -347,7 +350,7 @@
             "Good",
             "Bad",
             "Damaged"});
-            this.cmbUpdateCondition.Location = new System.Drawing.Point(131, 73);
+            this.cmbUpdateCondition.Location = new System.Drawing.Point(131, 135);
             this.cmbUpdateCondition.Margin = new System.Windows.Forms.Padding(2);
             this.cmbUpdateCondition.Name = "cmbUpdateCondition";
             this.cmbUpdateCondition.Size = new System.Drawing.Size(92, 21);
@@ -356,39 +359,41 @@
             // UpdateCondition
             // 
             this.UpdateCondition.AutoSize = true;
-            this.UpdateCondition.Location = new System.Drawing.Point(28, 78);
+            this.UpdateCondition.Location = new System.Drawing.Point(20, 139);
             this.UpdateCondition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UpdateCondition.Name = "UpdateCondition";
-            this.UpdateCondition.Size = new System.Drawing.Size(89, 13);
+            this.UpdateCondition.Size = new System.Drawing.Size(100, 13);
             this.UpdateCondition.TabIndex = 19;
             this.UpdateCondition.Text = "Update Condition";
             // 
             // UpdateQuantity
             // 
             this.UpdateQuantity.AutoSize = true;
-            this.UpdateQuantity.Location = new System.Drawing.Point(28, 41);
+            this.UpdateQuantity.Location = new System.Drawing.Point(20, 76);
             this.UpdateQuantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UpdateQuantity.Name = "UpdateQuantity";
-            this.UpdateQuantity.Size = new System.Drawing.Size(84, 13);
+            this.UpdateQuantity.Size = new System.Drawing.Size(92, 13);
             this.UpdateQuantity.TabIndex = 18;
             this.UpdateQuantity.Text = "Update Quantity";
             // 
             // txtUpdateQuantity
             // 
-            this.txtUpdateQuantity.Location = new System.Drawing.Point(131, 41);
+            this.txtUpdateQuantity.Location = new System.Drawing.Point(134, 73);
             this.txtUpdateQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateQuantity.Name = "txtUpdateQuantity";
-            this.txtUpdateQuantity.Size = new System.Drawing.Size(92, 20);
+            this.txtUpdateQuantity.Size = new System.Drawing.Size(92, 22);
             this.txtUpdateQuantity.TabIndex = 17;
             // 
             // Asset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 418);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(834, 418);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlAsset);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Asset";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asset";

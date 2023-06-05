@@ -62,7 +62,7 @@ namespace ISTN3AS_M2
             {
                 MenuM managermenuform = new MenuM(username);
                 this.Hide();
-                MessageBox.Show("Manager Login");
+              //  MessageBox.Show("Manager Login");
                 managermenuform.ShowDialog();
                 this.Show();
             }
@@ -70,7 +70,7 @@ namespace ISTN3AS_M2
             {
                 MenuC coachmenuform = new MenuC();
                 this.Hide();
-                MessageBox.Show("Coach Login");
+              //  MessageBox.Show("Coach Login");
                 coachmenuform.ShowDialog();
                 this.Show();
             }
