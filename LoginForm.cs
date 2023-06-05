@@ -153,5 +153,36 @@ namespace ISTN3AS_M2
             txtPassword.Text = "Password";
             txtPassword.ForeColor = Color.LightGray;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private Point offset;
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                // Calculate the offset between the mouse cursor and the top-left corner of the form
+                offset = new Point(e.X, e.Y);
+            }
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                // Calculate the new position of the form based on the offset and the current mouse cursor position
+                Point newPosition = PointToScreen(new Point(e.X, e.Y));
+                newPosition.Offset(-offset.X, -offset.Y);
+                Location = newPosition;
+            }
+        }
+
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+        }
     }
 }
