@@ -60,7 +60,7 @@ namespace ISTN3AS_M2
 
             if ((result > 0) && (rbtnManager.Checked))
             {
-                MenuM managermenuform = new MenuM();
+                MenuM managermenuform = new MenuM(username);
                 this.Hide();
                 MessageBox.Show("Manager Login");
                 managermenuform.ShowDialog();

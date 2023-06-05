@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace ISTN3AS_M2
 {
-    public partial class MenuC : Form
+    public partial class SupplierOrderForm : Form
     {
-        public MenuC()
+        string managerID;
+        public SupplierOrderForm(string data)
         {
             InitializeComponent();
+            managerID = data;
         }
 
-        private void btnLogOff_Click(object sender, EventArgs e)
+        private void SupplierOrderForm_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }
