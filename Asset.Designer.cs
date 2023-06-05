@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlAsset = new System.Windows.Forms.Panel();
+            this.btnDeleteAsset = new System.Windows.Forms.Button();
             this.dgvAsset = new System.Windows.Forms.DataGridView();
-            this.ds360Box = new ISTN3AS_M2.ds360Box();
-            this.assetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.assetTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.AssetTableAdapter();
             this.assetIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assetNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conditionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ds360Box = new ISTN3AS_M2.ds360Box();
+            this.assetTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.AssetTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnAddAsset = new System.Windows.Forms.Button();
             this.ConditionLabel = new System.Windows.Forms.Label();
             this.AssNameLabel = new System.Windows.Forms.Label();
@@ -55,17 +55,17 @@
             this.txtType = new System.Windows.Forms.TextBox();
             this.txtCostPrice = new System.Windows.Forms.TextBox();
             this.btnGenerateID = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnUpdateAsset = new System.Windows.Forms.Button();
             this.cmbUpdateCondition = new System.Windows.Forms.ComboBox();
             this.UpdateCondition = new System.Windows.Forms.Label();
             this.UpdateQuantity = new System.Windows.Forms.Label();
             this.txtUpdateQuantity = new System.Windows.Forms.TextBox();
-            this.btnDeleteAsset = new System.Windows.Forms.Button();
             this.pnlAsset.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +79,17 @@
             this.pnlAsset.Name = "pnlAsset";
             this.pnlAsset.Size = new System.Drawing.Size(825, 183);
             this.pnlAsset.TabIndex = 0;
+            // 
+            // btnDeleteAsset
+            // 
+            this.btnDeleteAsset.Location = new System.Drawing.Point(680, 61);
+            this.btnDeleteAsset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeleteAsset.Name = "btnDeleteAsset";
+            this.btnDeleteAsset.Size = new System.Drawing.Size(72, 56);
+            this.btnDeleteAsset.TabIndex = 19;
+            this.btnDeleteAsset.Text = "Delete Asset";
+            this.btnDeleteAsset.UseVisualStyleBackColor = true;
+            this.btnDeleteAsset.Click += new System.EventHandler(this.DeleteAsset_Click);
             // 
             // dgvAsset
             // 
@@ -96,20 +107,6 @@
             this.dgvAsset.Name = "dgvAsset";
             this.dgvAsset.Size = new System.Drawing.Size(645, 150);
             this.dgvAsset.TabIndex = 0;
-            // 
-            // ds360Box
-            // 
-            this.ds360Box.DataSetName = "ds360Box";
-            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // assetBindingSource
-            // 
-            this.assetBindingSource.DataMember = "Asset";
-            this.assetBindingSource.DataSource = this.ds360Box;
-            // 
-            // assetTableAdapter
-            // 
-            this.assetTableAdapter.ClearBeforeFill = true;
             // 
             // assetIDDataGridViewTextBoxColumn
             // 
@@ -147,6 +144,20 @@
             this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
             // 
+            // assetBindingSource
+            // 
+            this.assetBindingSource.DataMember = "Asset";
+            this.assetBindingSource.DataSource = this.ds360Box;
+            // 
+            // ds360Box
+            // 
+            this.ds360Box.DataSetName = "ds360Box";
+            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // assetTableAdapter
+            // 
+            this.assetTableAdapter.ClearBeforeFill = true;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnAddAsset);
@@ -167,15 +178,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(424, 226);
             this.panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Add Asset";
             // 
             // btnAddAsset
             // 
@@ -300,6 +302,15 @@
             this.btnGenerateID.UseVisualStyleBackColor = true;
             this.btnGenerateID.Click += new System.EventHandler(this.btnGenerateID_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Add Asset";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnUpdateAsset);
@@ -370,17 +381,6 @@
             this.txtUpdateQuantity.Size = new System.Drawing.Size(92, 20);
             this.txtUpdateQuantity.TabIndex = 17;
             // 
-            // btnDeleteAsset
-            // 
-            this.btnDeleteAsset.Location = new System.Drawing.Point(680, 61);
-            this.btnDeleteAsset.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDeleteAsset.Name = "btnDeleteAsset";
-            this.btnDeleteAsset.Size = new System.Drawing.Size(72, 56);
-            this.btnDeleteAsset.TabIndex = 19;
-            this.btnDeleteAsset.Text = "Delete Asset";
-            this.btnDeleteAsset.UseVisualStyleBackColor = true;
-            this.btnDeleteAsset.Click += new System.EventHandler(this.DeleteAsset_Click);
-            // 
             // Asset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,12 +390,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlAsset);
             this.Name = "Asset";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asset";
             this.Load += new System.EventHandler(this.Asset_Load);
             this.pnlAsset.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.assetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

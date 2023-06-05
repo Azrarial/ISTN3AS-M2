@@ -30,11 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ds360Box = new ISTN3AS_M2.ds360Box();
-            this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bookingTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.BookingTableAdapter();
             this.bookingIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.classIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,11 +39,14 @@
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.venueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ds360Box = new ISTN3AS_M2.ds360Box();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.bookingTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.BookingTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,12 +60,14 @@
             this.panel1.Size = new System.Drawing.Size(797, 428);
             this.panel1.TabIndex = 0;
             // 
-            // monthCalendar1
+            // label1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(274, 32);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 0;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(303, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(169, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Pick a date for bookings to display";
             // 
             // dataGridView1
             // 
@@ -84,20 +86,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(745, 224);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // ds360Box
-            // 
-            this.ds360Box.DataSetName = "ds360Box";
-            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bookingBindingSource
-            // 
-            this.bookingBindingSource.DataMember = "Booking";
-            this.bookingBindingSource.DataSource = this.ds360Box;
-            // 
-            // bookingTableAdapter
-            // 
-            this.bookingTableAdapter.ClearBeforeFill = true;
             // 
             // bookingIDDataGridViewTextBoxColumn
             // 
@@ -141,14 +129,26 @@
             this.venueDataGridViewTextBoxColumn.HeaderText = "Venue";
             this.venueDataGridViewTextBoxColumn.Name = "venueDataGridViewTextBoxColumn";
             // 
-            // label1
+            // bookingBindingSource
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(303, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Pick a date for bookings to display";
+            this.bookingBindingSource.DataMember = "Booking";
+            this.bookingBindingSource.DataSource = this.ds360Box;
+            // 
+            // ds360Box
+            // 
+            this.ds360Box.DataSetName = "ds360Box";
+            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(274, 32);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 0;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            // 
+            // bookingTableAdapter
+            // 
+            this.bookingTableAdapter.ClearBeforeFill = true;
             // 
             // ViewBooking
             // 
@@ -157,13 +157,14 @@
             this.ClientSize = new System.Drawing.Size(797, 428);
             this.Controls.Add(this.panel1);
             this.Name = "ViewBooking";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewBooking";
             this.Load += new System.EventHandler(this.ViewBooking_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -42,7 +42,10 @@ namespace ISTN3AS_M2
 
         private void btnInventory_Click(object sender, EventArgs e)
         {
-
+            Inventory inventory = new Inventory();
+            this.Hide();
+            inventory.ShowDialog();
+            this.Show();
         }
 
         private void btnSupplier_Click(object sender, EventArgs e)
@@ -55,7 +58,10 @@ namespace ISTN3AS_M2
 
         private void btnAsset_Click_1(object sender, EventArgs e)
         {
-
+            Asset asset = new Asset();
+            this.Hide();
+            asset.ShowDialog();
+            this.Show();
         }
     }
 }

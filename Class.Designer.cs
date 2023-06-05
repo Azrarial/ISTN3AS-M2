@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +41,14 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.dgvCoach = new System.Windows.Forms.DataGridView();
+            this.coachIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contactNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ds360Box = new ISTN3AS_M2.ds360Box();
             this.SpinCurrent = new System.Windows.Forms.NumericUpDown();
             this.SpinMax = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -62,15 +70,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbUpdateClass = new System.Windows.Forms.ComboBox();
             this.dgvClass = new System.Windows.Forms.DataGridView();
-            this.cmbUpdateGroup = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.ds360Box = new ISTN3AS_M2.ds360Box();
-            this.classBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.classTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.ClassTableAdapter();
             this.classIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coachIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,24 +79,25 @@
             this.maxCapacityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.currentCapacityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.classPublicDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.classBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cmbUpdateGroup = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.classTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.ClassTableAdapter();
             this.coachTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.CoachTableAdapter();
-            this.coachIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCoach)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpinCurrent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpinMax)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.classBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label11
@@ -209,14 +209,14 @@
             // dgvCoach
             // 
             this.dgvCoach.AutoGenerateColumns = false;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCoach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCoach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCoach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCoach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.coachIDDataGridViewTextBoxColumn1,
@@ -226,30 +226,76 @@
             this.emailAddressDataGridViewTextBoxColumn,
             this.passwordDataGridViewTextBoxColumn});
             this.dgvCoach.DataSource = this.coachBindingSource;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCoach.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCoach.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCoach.Location = new System.Drawing.Point(16, 37);
             this.dgvCoach.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCoach.Name = "dgvCoach";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCoach.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCoach.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCoach.RowHeadersWidth = 51;
             this.dgvCoach.RowTemplate.Height = 24;
             this.dgvCoach.Size = new System.Drawing.Size(555, 122);
             this.dgvCoach.TabIndex = 10;
             this.dgvCoach.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCoach_RowHeaderMouseClick);
+            // 
+            // coachIDDataGridViewTextBoxColumn1
+            // 
+            this.coachIDDataGridViewTextBoxColumn1.DataPropertyName = "CoachID";
+            this.coachIDDataGridViewTextBoxColumn1.HeaderText = "CoachID";
+            this.coachIDDataGridViewTextBoxColumn1.Name = "coachIDDataGridViewTextBoxColumn1";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // contactNumberDataGridViewTextBoxColumn
+            // 
+            this.contactNumberDataGridViewTextBoxColumn.DataPropertyName = "ContactNumber";
+            this.contactNumberDataGridViewTextBoxColumn.HeaderText = "ContactNumber";
+            this.contactNumberDataGridViewTextBoxColumn.Name = "contactNumberDataGridViewTextBoxColumn";
+            // 
+            // emailAddressDataGridViewTextBoxColumn
+            // 
+            this.emailAddressDataGridViewTextBoxColumn.DataPropertyName = "EmailAddress";
+            this.emailAddressDataGridViewTextBoxColumn.HeaderText = "EmailAddress";
+            this.emailAddressDataGridViewTextBoxColumn.Name = "emailAddressDataGridViewTextBoxColumn";
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            // 
+            // coachBindingSource
+            // 
+            this.coachBindingSource.DataMember = "Coach";
+            this.coachBindingSource.DataSource = this.ds360Box;
+            // 
+            // ds360Box
+            // 
+            this.ds360Box.DataSetName = "ds360Box";
+            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // SpinCurrent
             // 
@@ -484,6 +530,65 @@
             this.dgvClass.TabIndex = 11;
             this.dgvClass.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvClass_RowHeaderMouseClick);
             // 
+            // classIDDataGridViewTextBoxColumn
+            // 
+            this.classIDDataGridViewTextBoxColumn.DataPropertyName = "ClassID";
+            this.classIDDataGridViewTextBoxColumn.HeaderText = "ClassID";
+            this.classIDDataGridViewTextBoxColumn.Name = "classIDDataGridViewTextBoxColumn";
+            // 
+            // coachIDDataGridViewTextBoxColumn
+            // 
+            this.coachIDDataGridViewTextBoxColumn.DataPropertyName = "CoachID";
+            this.coachIDDataGridViewTextBoxColumn.HeaderText = "CoachID";
+            this.coachIDDataGridViewTextBoxColumn.Name = "coachIDDataGridViewTextBoxColumn";
+            // 
+            // groupTypeDataGridViewTextBoxColumn
+            // 
+            this.groupTypeDataGridViewTextBoxColumn.DataPropertyName = "GroupType";
+            this.groupTypeDataGridViewTextBoxColumn.HeaderText = "GroupType";
+            this.groupTypeDataGridViewTextBoxColumn.Name = "groupTypeDataGridViewTextBoxColumn";
+            // 
+            // classTypeDataGridViewTextBoxColumn
+            // 
+            this.classTypeDataGridViewTextBoxColumn.DataPropertyName = "ClassType";
+            this.classTypeDataGridViewTextBoxColumn.HeaderText = "ClassType";
+            this.classTypeDataGridViewTextBoxColumn.Name = "classTypeDataGridViewTextBoxColumn";
+            // 
+            // startTimeDataGridViewTextBoxColumn
+            // 
+            this.startTimeDataGridViewTextBoxColumn.DataPropertyName = "StartTime";
+            this.startTimeDataGridViewTextBoxColumn.HeaderText = "StartTime";
+            this.startTimeDataGridViewTextBoxColumn.Name = "startTimeDataGridViewTextBoxColumn";
+            // 
+            // endTimeDataGridViewTextBoxColumn
+            // 
+            this.endTimeDataGridViewTextBoxColumn.DataPropertyName = "EndTime";
+            this.endTimeDataGridViewTextBoxColumn.HeaderText = "EndTime";
+            this.endTimeDataGridViewTextBoxColumn.Name = "endTimeDataGridViewTextBoxColumn";
+            // 
+            // maxCapacityDataGridViewTextBoxColumn
+            // 
+            this.maxCapacityDataGridViewTextBoxColumn.DataPropertyName = "MaxCapacity";
+            this.maxCapacityDataGridViewTextBoxColumn.HeaderText = "MaxCapacity";
+            this.maxCapacityDataGridViewTextBoxColumn.Name = "maxCapacityDataGridViewTextBoxColumn";
+            // 
+            // currentCapacityDataGridViewTextBoxColumn
+            // 
+            this.currentCapacityDataGridViewTextBoxColumn.DataPropertyName = "CurrentCapacity";
+            this.currentCapacityDataGridViewTextBoxColumn.HeaderText = "CurrentCapacity";
+            this.currentCapacityDataGridViewTextBoxColumn.Name = "currentCapacityDataGridViewTextBoxColumn";
+            // 
+            // classPublicDataGridViewCheckBoxColumn
+            // 
+            this.classPublicDataGridViewCheckBoxColumn.DataPropertyName = "ClassPublic";
+            this.classPublicDataGridViewCheckBoxColumn.HeaderText = "ClassPublic";
+            this.classPublicDataGridViewCheckBoxColumn.Name = "classPublicDataGridViewCheckBoxColumn";
+            // 
+            // classBindingSource
+            // 
+            this.classBindingSource.DataMember = "Class";
+            this.classBindingSource.DataSource = this.ds360Box;
+            // 
             // cmbUpdateGroup
             // 
             this.cmbUpdateGroup.FormattingEnabled = true;
@@ -558,118 +663,13 @@
             this.label13.TabIndex = 13;
             this.label13.Text = "End Time";
             // 
-            // ds360Box
-            // 
-            this.ds360Box.DataSetName = "ds360Box";
-            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // classBindingSource
-            // 
-            this.classBindingSource.DataMember = "Class";
-            this.classBindingSource.DataSource = this.ds360Box;
-            // 
             // classTableAdapter
             // 
             this.classTableAdapter.ClearBeforeFill = true;
             // 
-            // classIDDataGridViewTextBoxColumn
-            // 
-            this.classIDDataGridViewTextBoxColumn.DataPropertyName = "ClassID";
-            this.classIDDataGridViewTextBoxColumn.HeaderText = "ClassID";
-            this.classIDDataGridViewTextBoxColumn.Name = "classIDDataGridViewTextBoxColumn";
-            // 
-            // coachIDDataGridViewTextBoxColumn
-            // 
-            this.coachIDDataGridViewTextBoxColumn.DataPropertyName = "CoachID";
-            this.coachIDDataGridViewTextBoxColumn.HeaderText = "CoachID";
-            this.coachIDDataGridViewTextBoxColumn.Name = "coachIDDataGridViewTextBoxColumn";
-            // 
-            // groupTypeDataGridViewTextBoxColumn
-            // 
-            this.groupTypeDataGridViewTextBoxColumn.DataPropertyName = "GroupType";
-            this.groupTypeDataGridViewTextBoxColumn.HeaderText = "GroupType";
-            this.groupTypeDataGridViewTextBoxColumn.Name = "groupTypeDataGridViewTextBoxColumn";
-            // 
-            // classTypeDataGridViewTextBoxColumn
-            // 
-            this.classTypeDataGridViewTextBoxColumn.DataPropertyName = "ClassType";
-            this.classTypeDataGridViewTextBoxColumn.HeaderText = "ClassType";
-            this.classTypeDataGridViewTextBoxColumn.Name = "classTypeDataGridViewTextBoxColumn";
-            // 
-            // startTimeDataGridViewTextBoxColumn
-            // 
-            this.startTimeDataGridViewTextBoxColumn.DataPropertyName = "StartTime";
-            this.startTimeDataGridViewTextBoxColumn.HeaderText = "StartTime";
-            this.startTimeDataGridViewTextBoxColumn.Name = "startTimeDataGridViewTextBoxColumn";
-            // 
-            // endTimeDataGridViewTextBoxColumn
-            // 
-            this.endTimeDataGridViewTextBoxColumn.DataPropertyName = "EndTime";
-            this.endTimeDataGridViewTextBoxColumn.HeaderText = "EndTime";
-            this.endTimeDataGridViewTextBoxColumn.Name = "endTimeDataGridViewTextBoxColumn";
-            // 
-            // maxCapacityDataGridViewTextBoxColumn
-            // 
-            this.maxCapacityDataGridViewTextBoxColumn.DataPropertyName = "MaxCapacity";
-            this.maxCapacityDataGridViewTextBoxColumn.HeaderText = "MaxCapacity";
-            this.maxCapacityDataGridViewTextBoxColumn.Name = "maxCapacityDataGridViewTextBoxColumn";
-            // 
-            // currentCapacityDataGridViewTextBoxColumn
-            // 
-            this.currentCapacityDataGridViewTextBoxColumn.DataPropertyName = "CurrentCapacity";
-            this.currentCapacityDataGridViewTextBoxColumn.HeaderText = "CurrentCapacity";
-            this.currentCapacityDataGridViewTextBoxColumn.Name = "currentCapacityDataGridViewTextBoxColumn";
-            // 
-            // classPublicDataGridViewCheckBoxColumn
-            // 
-            this.classPublicDataGridViewCheckBoxColumn.DataPropertyName = "ClassPublic";
-            this.classPublicDataGridViewCheckBoxColumn.HeaderText = "ClassPublic";
-            this.classPublicDataGridViewCheckBoxColumn.Name = "classPublicDataGridViewCheckBoxColumn";
-            // 
-            // coachBindingSource
-            // 
-            this.coachBindingSource.DataMember = "Coach";
-            this.coachBindingSource.DataSource = this.ds360Box;
-            // 
             // coachTableAdapter
             // 
             this.coachTableAdapter.ClearBeforeFill = true;
-            // 
-            // coachIDDataGridViewTextBoxColumn1
-            // 
-            this.coachIDDataGridViewTextBoxColumn1.DataPropertyName = "CoachID";
-            this.coachIDDataGridViewTextBoxColumn1.HeaderText = "CoachID";
-            this.coachIDDataGridViewTextBoxColumn1.Name = "coachIDDataGridViewTextBoxColumn1";
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // contactNumberDataGridViewTextBoxColumn
-            // 
-            this.contactNumberDataGridViewTextBoxColumn.DataPropertyName = "ContactNumber";
-            this.contactNumberDataGridViewTextBoxColumn.HeaderText = "ContactNumber";
-            this.contactNumberDataGridViewTextBoxColumn.Name = "contactNumberDataGridViewTextBoxColumn";
-            // 
-            // emailAddressDataGridViewTextBoxColumn
-            // 
-            this.emailAddressDataGridViewTextBoxColumn.DataPropertyName = "EmailAddress";
-            this.emailAddressDataGridViewTextBoxColumn.HeaderText = "EmailAddress";
-            this.emailAddressDataGridViewTextBoxColumn.Name = "emailAddressDataGridViewTextBoxColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
             // 
             // Class
             // 
@@ -683,21 +683,22 @@
             this.Controls.Add(this.dgvClass);
             this.Controls.Add(this.groupBox1);
             this.Name = "Class";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Class";
             this.Load += new System.EventHandler(this.Class_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCoach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpinCurrent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpinMax)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.classBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnLogOff = new System.Windows.Forms.Button();
-            this.btnAsset = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBooking = new System.Windows.Forms.Button();
+            this.btnClass = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLogOff
@@ -47,31 +47,33 @@
             this.btnLogOff.UseVisualStyleBackColor = false;
             this.btnLogOff.Click += new System.EventHandler(this.btnLogOff_Click);
             // 
-            // btnAsset
+            // btnBooking
             // 
-            this.btnAsset.BackColor = System.Drawing.Color.Black;
-            this.btnAsset.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsset.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAsset.Location = new System.Drawing.Point(418, 88);
-            this.btnAsset.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAsset.Name = "btnAsset";
-            this.btnAsset.Size = new System.Drawing.Size(227, 79);
-            this.btnAsset.TabIndex = 6;
-            this.btnAsset.Text = "Booking System ";
-            this.btnAsset.UseVisualStyleBackColor = false;
+            this.btnBooking.BackColor = System.Drawing.Color.Black;
+            this.btnBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBooking.Location = new System.Drawing.Point(418, 88);
+            this.btnBooking.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(227, 79);
+            this.btnBooking.TabIndex = 6;
+            this.btnBooking.Text = "Booking System ";
+            this.btnBooking.UseVisualStyleBackColor = false;
+            this.btnBooking.Click += new System.EventHandler(this.btnAsset_Click);
             // 
-            // button1
+            // btnClass
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(418, 239);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 79);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Class System";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnClass.BackColor = System.Drawing.Color.Black;
+            this.btnClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClass.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnClass.Location = new System.Drawing.Point(418, 239);
+            this.btnClass.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClass.Name = "btnClass";
+            this.btnClass.Size = new System.Drawing.Size(227, 79);
+            this.btnClass.TabIndex = 7;
+            this.btnClass.Text = "Class System";
+            this.btnClass.UseVisualStyleBackColor = false;
+            this.btnClass.Click += new System.EventHandler(this.btnClass_Click);
             // 
             // MenuC
             // 
@@ -80,8 +82,8 @@
             this.BackgroundImage = global::ISTN3AS_M2.Properties.Resources.Screenshot_2023_06_04_140239;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(707, 428);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAsset);
+            this.Controls.Add(this.btnClass);
+            this.Controls.Add(this.btnBooking);
             this.Controls.Add(this.btnLogOff);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -96,7 +98,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogOff;
-        private System.Windows.Forms.Button btnAsset;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBooking;
+        private System.Windows.Forms.Button btnClass;
     }
 }
