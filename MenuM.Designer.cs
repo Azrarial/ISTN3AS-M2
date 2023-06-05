@@ -39,7 +39,7 @@
             // btnBooking
             // 
             this.btnBooking.BackColor = System.Drawing.Color.Black;
-            this.btnBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooking.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBooking.Location = new System.Drawing.Point(569, 62);
             this.btnBooking.Margin = new System.Windows.Forms.Padding(2);
@@ -53,7 +53,7 @@
             // btnSales
             // 
             this.btnSales.BackColor = System.Drawing.Color.Black;
-            this.btnSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSales.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSales.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSales.Location = new System.Drawing.Point(436, 176);
             this.btnSales.Margin = new System.Windows.Forms.Padding(2);
@@ -67,7 +67,7 @@
             // btnInventory
             // 
             this.btnInventory.BackColor = System.Drawing.Color.Black;
-            this.btnInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventory.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInventory.Location = new System.Drawing.Point(436, 295);
             this.btnInventory.Margin = new System.Windows.Forms.Padding(2);
@@ -81,7 +81,7 @@
             // btnSupplier
             // 
             this.btnSupplier.BackColor = System.Drawing.Color.Black;
-            this.btnSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupplier.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupplier.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSupplier.Location = new System.Drawing.Point(680, 176);
             this.btnSupplier.Margin = new System.Windows.Forms.Padding(2);
@@ -95,7 +95,7 @@
             // btnAsset
             // 
             this.btnAsset.BackColor = System.Drawing.Color.Black;
-            this.btnAsset.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsset.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsset.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAsset.Location = new System.Drawing.Point(680, 295);
             this.btnAsset.Margin = new System.Windows.Forms.Padding(2);
@@ -109,7 +109,7 @@
             // btnLogOff
             // 
             this.btnLogOff.BackColor = System.Drawing.Color.Black;
-            this.btnLogOff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOff.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOff.ForeColor = System.Drawing.Color.White;
             this.btnLogOff.Location = new System.Drawing.Point(9, 436);
             this.btnLogOff.Margin = new System.Windows.Forms.Padding(2);
