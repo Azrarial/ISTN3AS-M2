@@ -112,8 +112,7 @@ namespace ISTN3AS_M2
 
                         DateTime now = DateTime.Now;
 
-                        // Store the date and time in separate string variables
-                        string currentDate = now.ToString("yyyy-MM-dd"); // Format: "yyyy-MM-dd"
+                        string currentDate = now.ToString("yyyy-MM-dd");
                         string currentTime = now.ToString("HH:mm:ss");
 
 

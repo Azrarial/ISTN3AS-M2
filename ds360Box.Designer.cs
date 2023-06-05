@@ -11736,12 +11736,34 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, St" +
                 "atus FROM dbo.SupplierOrder";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"INSERT INTO [dbo].[SupplierOrder] ([SupplierOrderID], [SupplierID], [AssetID], [TotalAmount], [OrderDate], [Quantity], [Status]) VALUES (@SupplierOrderID, @SupplierID, @AssetID, @TotalAmount, @OrderDate, @Quantity, @Status);
+SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, Status FROM SupplierOrder WHERE (SupplierOrderID = @SupplierOrderID)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierOrderID", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierOrderID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierID", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AssetID", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "AssetID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TotalAmount", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 6, 2, "TotalAmount", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderDate", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quantity", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "Status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"UPDATE       SupplierOrder
+SET                Status = @Status
+WHERE        (SupplierOrderID = @Original_SupplierOrderID);  
+SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, Status FROM SupplierOrder WHERE (SupplierOrderID = @SupplierOrderID)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Status", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "Status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SupplierOrderID", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierOrderID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierOrderID", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierOrderID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11974,6 +11996,102 @@ SELECT SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, S
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string SupplierID, string AssetID, decimal TotalAmount, System.DateTime OrderDate, int Quantity, string Status, string Original_SupplierOrderID, string Original_SupplierID, string Original_AssetID, decimal Original_TotalAmount, System.DateTime Original_OrderDate, int Original_Quantity, string Original_Status) {
             return this.Update(Original_SupplierOrderID, SupplierID, AssetID, TotalAmount, OrderDate, Quantity, Status, Original_SupplierOrderID, Original_SupplierID, Original_AssetID, Original_TotalAmount, Original_OrderDate, Original_Quantity, Original_Status);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertOrder(string SupplierOrderID, string SupplierID, string AssetID, decimal TotalAmount, string OrderDate, int Quantity, string Status) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            if ((SupplierOrderID == null)) {
+                throw new global::System.ArgumentNullException("SupplierOrderID");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(SupplierOrderID));
+            }
+            if ((SupplierID == null)) {
+                throw new global::System.ArgumentNullException("SupplierID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(SupplierID));
+            }
+            if ((AssetID == null)) {
+                throw new global::System.ArgumentNullException("AssetID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(AssetID));
+            }
+            command.Parameters[3].Value = ((decimal)(TotalAmount));
+            if ((OrderDate == null)) {
+                throw new global::System.ArgumentNullException("OrderDate");
+            }
+            else {
+                command.Parameters[4].Value = ((string)(OrderDate));
+            }
+            command.Parameters[5].Value = ((int)(Quantity));
+            if ((Status == null)) {
+                throw new global::System.ArgumentNullException("Status");
+            }
+            else {
+                command.Parameters[6].Value = ((string)(Status));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateStatus(string Status, string Original_SupplierOrderID, string SupplierOrderID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            if ((Status == null)) {
+                throw new global::System.ArgumentNullException("Status");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Status));
+            }
+            if ((Original_SupplierOrderID == null)) {
+                throw new global::System.ArgumentNullException("Original_SupplierOrderID");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Original_SupplierOrderID));
+            }
+            if ((SupplierOrderID == null)) {
+                throw new global::System.ArgumentNullException("SupplierOrderID");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(SupplierOrderID));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     

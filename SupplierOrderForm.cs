@@ -16,6 +16,7 @@ namespace ISTN3AS_M2
     {
         string itemid, itemname;
         string unitPrice;
+        string supID;
         double totalCost = 0;
         decimal dQuantity = 0;
         int iQuantity = 0;
@@ -74,20 +75,20 @@ namespace ISTN3AS_M2
                 if (response == System.Windows.Forms.DialogResult.OK)
                 {
 
+                    Random random = new Random();
+                    string supplierOrderID = "SOID" + (random.Next(100000, 999999)).ToString();
+                    string supplierID = cmbSupplier.Text;
+                    string assetID = itemid;
+                    decimal totalAmt = Convert.ToDecimal(txtTotal.Text);
+                    DateTime now = DateTime.Now;
+                    string currentDate = now.ToString("yyyy-MM-dd");
+                    string status = "Active";
 
 
 
-
-
+                    supplierOrderTableAdapter.InsertOrder(supplierOrderID, supplierID, assetID, totalAmt, currentDate, iQuantity, status);
                     MessageBox.Show("Insert Statement");
-
-
-
-
-
-
-
-
+                    this.supplierOrderTableAdapter.Fill(this.ds360Box.SupplierOrder);
 
                 }
             }
@@ -108,6 +109,29 @@ namespace ISTN3AS_M2
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnUpdateStatus_Click(object sender, EventArgs e)
+        {
+            if (dbGridSupplier.SelectedCells.Count > 0)
+            {
+                int selectedrowindex = dbGridSupplier.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dbGridSupplier.Rows[selectedrowindex];
+                supID = selectedRow.Cells[0].Value.ToString();
+            }
+
+            System.Windows.Forms.DialogResult response;
+            response = MessageBox.Show("Confirm Status Change to " + cmbStatus.Text + " of Order No: " + supID + " ?", "Status Change" , MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (response == System.Windows.Forms.DialogResult.OK)
+            {
+
+                string newStatus = cmbStatus.Text;
+                supplierOrderTableAdapter.UpdateStatus(newStatus, supID, supID);
+                this.supplierOrderTableAdapter.Fill(this.ds360Box.SupplierOrder);
+
+                MessageBox.Show("Update Successful");
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

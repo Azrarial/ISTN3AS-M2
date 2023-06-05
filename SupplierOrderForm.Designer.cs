@@ -30,22 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dbGridAssets = new System.Windows.Forms.DataGridView();
-            this.ds360Box = new ISTN3AS_M2.ds360Box();
-            this.assetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.assetTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.AssetTableAdapter();
             this.assetIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assetNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conditionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ds360Box = new ISTN3AS_M2.ds360Box();
+            this.assetTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.AssetTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dbGridTransaction = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.dbGridSupplier = new System.Windows.Forms.DataGridView();
-            this.supplierOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.supplierOrderTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SupplierOrderTableAdapter();
             this.supplierOrderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assetIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,21 +54,20 @@
             this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.supplierOrderTableAdapter = new ISTN3AS_M2.ds360BoxTableAdapters.SupplierOrderTableAdapter();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConfirmOrder = new System.Windows.Forms.Button();
             this.cmbSupplier = new System.Windows.Forms.ComboBox();
             this.btnUpdateStatus = new System.Windows.Forms.Button();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.updwnQuantity = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridAssets)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridTransaction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierOrderBindingSource)).BeginInit();
@@ -90,20 +90,6 @@
             this.dbGridAssets.Name = "dbGridAssets";
             this.dbGridAssets.Size = new System.Drawing.Size(644, 150);
             this.dbGridAssets.TabIndex = 1;
-            // 
-            // ds360Box
-            // 
-            this.ds360Box.DataSetName = "ds360Box";
-            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // assetBindingSource
-            // 
-            this.assetBindingSource.DataMember = "Asset";
-            this.assetBindingSource.DataSource = this.ds360Box;
-            // 
-            // assetTableAdapter
-            // 
-            this.assetTableAdapter.ClearBeforeFill = true;
             // 
             // assetIDDataGridViewTextBoxColumn
             // 
@@ -141,6 +127,20 @@
             this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
             // 
+            // assetBindingSource
+            // 
+            this.assetBindingSource.DataMember = "Asset";
+            this.assetBindingSource.DataSource = this.ds360Box;
+            // 
+            // ds360Box
+            // 
+            this.ds360Box.DataSetName = "ds360Box";
+            this.ds360Box.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // assetTableAdapter
+            // 
+            this.assetTableAdapter.ClearBeforeFill = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -173,6 +173,21 @@
             this.dbGridTransaction.Size = new System.Drawing.Size(350, 150);
             this.dbGridTransaction.TabIndex = 13;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "AssetID";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "AssetName";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "CostPrice";
+            this.Column3.Name = "Column3";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -200,15 +215,6 @@
             this.dbGridSupplier.Name = "dbGridSupplier";
             this.dbGridSupplier.Size = new System.Drawing.Size(744, 150);
             this.dbGridSupplier.TabIndex = 15;
-            // 
-            // supplierOrderBindingSource
-            // 
-            this.supplierOrderBindingSource.DataMember = "SupplierOrder";
-            this.supplierOrderBindingSource.DataSource = this.ds360Box;
-            // 
-            // supplierOrderTableAdapter
-            // 
-            this.supplierOrderTableAdapter.ClearBeforeFill = true;
             // 
             // supplierOrderIDDataGridViewTextBoxColumn
             // 
@@ -252,6 +258,15 @@
             this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             // 
+            // supplierOrderBindingSource
+            // 
+            this.supplierOrderBindingSource.DataMember = "SupplierOrder";
+            this.supplierOrderBindingSource.DataSource = this.ds360Box;
+            // 
+            // supplierOrderTableAdapter
+            // 
+            this.supplierOrderTableAdapter.ClearBeforeFill = true;
+            // 
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(12, 516);
@@ -289,21 +304,6 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Total";
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "AssetID";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "AssetName";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "CostPrice";
-            this.Column3.Name = "Column3";
-            // 
             // btnConfirmOrder
             // 
             this.btnConfirmOrder.Location = new System.Drawing.Point(512, 204);
@@ -331,6 +331,7 @@
             this.btnUpdateStatus.TabIndex = 22;
             this.btnUpdateStatus.Text = "Update Status";
             this.btnUpdateStatus.UseVisualStyleBackColor = true;
+            this.btnUpdateStatus.Click += new System.EventHandler(this.btnUpdateStatus_Click);
             // 
             // cmbStatus
             // 
@@ -389,8 +390,8 @@
             this.Load += new System.EventHandler(this.SupplierOrderForm_Load);
             this.VisibleChanged += new System.EventHandler(this.SupplierOrderForm_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dbGridAssets)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.assetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridTransaction)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierOrderBindingSource)).EndInit();
