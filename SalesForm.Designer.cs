@@ -576,11 +576,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource)).EndInit();
+         //   ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360BoxBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleItemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds360Box1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource1)).EndInit();
+         //   ((System.ComponentModel.ISupportInitialize)(this.saleTransactionBindingSource1)).EndInit();
             this.pnlConfirm.ResumeLayout(false);
             this.pnlConfirm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridTransaction)).EndInit();

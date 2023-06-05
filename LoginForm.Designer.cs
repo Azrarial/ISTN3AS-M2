@@ -95,6 +95,7 @@
             this.txtUserName.Size = new System.Drawing.Size(223, 26);
             this.txtUserName.TabIndex = 3;
             this.txtUserName.Text = "ManagerID";
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             this.txtUserName.MouseEnter += new System.EventHandler(this.txtUserName_MouseEnter);
             this.txtUserName.MouseLeave += new System.EventHandler(this.txtUserName_MouseLeave);
             // 

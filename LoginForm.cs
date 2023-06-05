@@ -86,7 +86,7 @@ namespace ISTN3AS_M2
             {
                 txtUserName.Text = "";
                 txtUserName.Focus();
-                txtUserName.ForeColor = Color.Black;
+                txtUserName.ForeColor = Color.White;
             }  
         }
 
@@ -112,7 +112,7 @@ namespace ISTN3AS_M2
             {
                 txtPassword.Text = "";
                 txtPassword.Focus();
-                txtPassword.ForeColor = Color.Black;
+                txtPassword.ForeColor = Color.White;
             }
         }
 
@@ -183,6 +183,11 @@ namespace ISTN3AS_M2
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
